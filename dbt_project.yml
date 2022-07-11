@@ -1,0 +1,29 @@
+
+name: 'data_pipeline'
+version: '0.1'
+profile: 'data-pipeline'
+config-version: 2
+
+source-paths: ["models"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+data-paths: ["data"]
+macro-paths: ["macros"]
+
+target-path: "target"
+clean-targets:
+    - "target"
+    - "dbt_modules"
+    - "logs"
+
+models:
+  stg_deliveries:
+      +schema: stg_deliveries
+  data-pipeline:
+      materialized: table
+      staging:
+        materialized: view
+
+
+snapshots:
+  target_schema: snapshots
