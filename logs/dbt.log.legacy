@@ -1,0 +1,1098 @@
+2022-07-12 00:19:29.606308 (MainThread): Running with dbt=1.0.8
+2022-07-12 00:19:29.684263 (MainThread): 00:19:29  [WARNING]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+2022-07-12 00:19:29.684905 (MainThread): 00:19:29  Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7c0757e520>]}
+2022-07-12 00:19:29.685281 (MainThread): 00:19:29  [WARNING]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+2022-07-12 00:19:29.685468 (MainThread): 00:19:29  Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7c07502f10>]}
+2022-07-12 00:19:29.707681 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt_rpc.task.server.RPCServerTask'>, debug=None, defer=None, exclude=None, fail_fast=None, host='0.0.0.0', log_cache_events=False, log_format=None, models=None, partial_parse=True, port=8580, printer_width=None, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, send_anonymous_usage_stats=None, single_threaded=False, state=None, static_parser=None, target=None, threads=None, use_colors=None, use_experimental_parser=None, vars='{}', version_check=None, warn_error=None, which='rpc', write_json=None)
+2022-07-12 00:19:29.725130 (MainThread): Tracking: tracking
+2022-07-12 00:19:29.733216 (Thread-12): 00:19:29  Partial parse save file not found. Starting full parse.
+2022-07-12 00:19:29.733730 (Thread-12): 00:19:29  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7c07476e80>]}
+2022-07-12 00:19:29.736983 (MainThread): 00:19:29  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7c031b5940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7c07476e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7c074882b0>]}
+2022-07-12 00:19:29.737336 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=22
+2022-07-12 00:19:29.737724 (MainThread): Supported methods: ['build', 'cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'list', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'source-freshness', 'status', 'test']
+2022-07-12 00:19:29.737966 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2022-07-12 00:19:29.806912 (Thread-12): 00:19:29  Parsing macros/relations.sql
+2022-07-12 00:19:29.807990 (Thread-12): 00:19:29  Parsing macros/adapters.sql
+2022-07-12 00:19:29.837838 (Thread-12): 00:19:29  Parsing macros/catalog.sql
+2022-07-12 00:19:29.850470 (Thread-12): 00:19:29  Parsing macros/materializations/snapshot_merge.sql
+2022-07-12 00:19:29.851265 (Thread-12): 00:19:29  Parsing macros/relations.sql
+2022-07-12 00:19:29.852646 (Thread-12): 00:19:29  Parsing macros/adapters.sql
+2022-07-12 00:19:29.875421 (Thread-12): 00:19:29  Parsing macros/catalog.sql
+2022-07-12 00:19:29.877766 (Thread-12): 00:19:29  Parsing macros/materializations/snapshot_merge.sql
+2022-07-12 00:19:29.879497 (Thread-12): 00:19:29  Parsing macros/adapters/metadata.sql
+2022-07-12 00:19:29.886735 (Thread-12): 00:19:29  Parsing macros/adapters/columns.sql
+2022-07-12 00:19:29.896766 (Thread-12): 00:19:29  Parsing macros/adapters/freshness.sql
+2022-07-12 00:19:29.899714 (Thread-12): 00:19:29  Parsing macros/adapters/persist_docs.sql
+2022-07-12 00:19:29.904214 (Thread-12): 00:19:29  Parsing macros/adapters/relation.sql
+2022-07-12 00:19:29.913917 (Thread-12): 00:19:29  Parsing macros/adapters/schema.sql
+2022-07-12 00:19:29.916142 (Thread-12): 00:19:29  Parsing macros/adapters/indexes.sql
+2022-07-12 00:19:29.918896 (Thread-12): 00:19:29  Parsing macros/get_custom_name/get_custom_schema.sql
+2022-07-12 00:19:29.921412 (Thread-12): 00:19:29  Parsing macros/get_custom_name/get_custom_alias.sql
+2022-07-12 00:19:29.922940 (Thread-12): 00:19:29  Parsing macros/get_custom_name/get_custom_database.sql
+2022-07-12 00:19:29.924584 (Thread-12): 00:19:29  Parsing macros/etc/datetime.sql
+2022-07-12 00:19:29.933085 (Thread-12): 00:19:29  Parsing macros/etc/statement.sql
+2022-07-12 00:19:29.937620 (Thread-12): 00:19:29  Parsing macros/generic_test_sql/unique.sql
+2022-07-12 00:19:29.938404 (Thread-12): 00:19:29  Parsing macros/generic_test_sql/not_null.sql
+2022-07-12 00:19:29.938983 (Thread-12): 00:19:29  Parsing macros/generic_test_sql/accepted_values.sql
+2022-07-12 00:19:29.940353 (Thread-12): 00:19:29  Parsing macros/generic_test_sql/relationships.sql
+2022-07-12 00:19:29.941280 (Thread-12): 00:19:29  Parsing macros/materializations/configs.sql
+2022-07-12 00:19:29.943573 (Thread-12): 00:19:29  Parsing macros/materializations/hooks.sql
+2022-07-12 00:19:29.947422 (Thread-12): 00:19:29  Parsing macros/materializations/models/table/table.sql
+2022-07-12 00:19:29.954834 (Thread-12): 00:19:29  Parsing macros/materializations/models/table/create_table_as.sql
+2022-07-12 00:19:29.957778 (Thread-12): 00:19:29  Parsing macros/materializations/models/view/create_or_replace_view.sql
+2022-07-12 00:19:29.960464 (Thread-12): 00:19:29  Parsing macros/materializations/models/view/helpers.sql
+2022-07-12 00:19:29.961838 (Thread-12): 00:19:29  Parsing macros/materializations/models/view/create_view_as.sql
+2022-07-12 00:19:29.964150 (Thread-12): 00:19:29  Parsing macros/materializations/models/view/view.sql
+2022-07-12 00:19:29.971269 (Thread-12): 00:19:29  Parsing macros/materializations/models/incremental/incremental.sql
+2022-07-12 00:19:29.981297 (Thread-12): 00:19:29  Parsing macros/materializations/models/incremental/on_schema_change.sql
+2022-07-12 00:19:29.996716 (Thread-12): 00:19:29  Parsing macros/materializations/models/incremental/is_incremental.sql
+2022-07-12 00:19:29.998352 (Thread-12): 00:19:29  Parsing macros/materializations/models/incremental/merge.sql
+2022-07-12 00:19:30.009452 (Thread-12): 00:19:30  Parsing macros/materializations/models/incremental/column_helpers.sql
+2022-07-12 00:19:30.013882 (Thread-12): 00:19:30  Parsing macros/materializations/seeds/helpers.sql
+2022-07-12 00:19:30.029990 (Thread-12): 00:19:30  Parsing macros/materializations/seeds/seed.sql
+2022-07-12 00:19:30.036001 (Thread-12): 00:19:30  Parsing macros/materializations/tests/helpers.sql
+2022-07-12 00:19:30.037948 (Thread-12): 00:19:30  Parsing macros/materializations/tests/test.sql
+2022-07-12 00:19:30.042394 (Thread-12): 00:19:30  Parsing macros/materializations/tests/where_subquery.sql
+2022-07-12 00:19:30.044323 (Thread-12): 00:19:30  Parsing macros/materializations/snapshots/helpers.sql
+2022-07-12 00:19:30.055984 (Thread-12): 00:19:30  Parsing macros/materializations/snapshots/strategies.sql
+2022-07-12 00:19:30.072554 (Thread-12): 00:19:30  Parsing macros/materializations/snapshots/snapshot_merge.sql
+2022-07-12 00:19:30.074297 (Thread-12): 00:19:30  Parsing macros/materializations/snapshots/snapshot.sql
+2022-07-12 00:19:30.085615 (Thread-12): 00:19:30  Parsing tests/generic/builtin.sql
+2022-07-12 00:19:30.283940 (Thread-12): 00:19:30  1699: static parser successfully parsed facts/deliveries.sql
+2022-07-12 00:19:30.297050 (Thread-12): 00:19:30  1699: static parser successfully parsed dimensions/robot_dimension.sql
+2022-07-12 00:19:30.299403 (Thread-12): 00:19:30  1699: static parser successfully parsed dimensions/merchant_dimension.sql
+2022-07-12 00:19:30.301755 (Thread-12): 00:19:30  1699: static parser successfully parsed dimensions/pilot_dimension.sql
+2022-07-12 00:19:30.303919 (Thread-12): 00:19:30  1699: static parser successfully parsed staging/stg_deliveries/stg_deliveres.sql
+2022-07-12 00:19:30.306430 (Thread-12): 00:19:30  1699: static parser successfully parsed staging/stg_deliveries/stg_attempts.sql
+2022-07-12 00:19:30.332924 (Thread-12): 00:19:30  [WARNING]: Did not find matching node for patch with name 'customers' in the 'models' section of file 'models/schema.yml'
+2022-07-12 00:19:30.339203 (Thread-12): 00:19:30  [WARNING]: Did not find matching node for patch with name 'orders' in the 'models' section of file 'models/schema.yml'
+2022-07-12 00:19:30.406693 (Thread-12): 00:19:30  [WARNING]: Test 'test.data_pipeline.unique_customers_customer_id.c5af1ff4b1' (models/schema.yml) depends on a node named 'customers' which was not found
+2022-07-12 00:19:30.407058 (Thread-12): 00:19:30  [WARNING]: Test 'test.data_pipeline.not_null_customers_customer_id.5c9bf9911d' (models/schema.yml) depends on a node named 'customers' which was not found
+2022-07-12 00:19:30.407273 (Thread-12): 00:19:30  [WARNING]: Test 'test.data_pipeline.unique_orders_order_id.fed79b3a6e' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:19:30.407468 (Thread-12): 00:19:30  [WARNING]: Test 'test.data_pipeline.not_null_orders_order_id.cf6c17daed' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:19:30.407673 (Thread-12): 00:19:30  [WARNING]: Test 'test.data_pipeline.not_null_orders_customer_id.c5f02694af' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:19:30.407866 (Thread-12): 00:19:30  [WARNING]: Test 'test.data_pipeline.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2' (models/schema.yml) depends on a node named 'customers' which was not found
+2022-07-12 00:19:30.408055 (Thread-12): 00:19:30  [WARNING]: Test 'test.data_pipeline.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:19:30.408243 (Thread-12): 00:19:30  [WARNING]: Test 'test.data_pipeline.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:19:30.408432 (Thread-12): 00:19:30  [WARNING]: Test 'test.data_pipeline.not_null_orders_amount.106140f9fd' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:19:30.408618 (Thread-12): 00:19:30  [WARNING]: Test 'test.data_pipeline.not_null_orders_credit_card_amount.d3ca593b59' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:19:30.408803 (Thread-12): 00:19:30  [WARNING]: Test 'test.data_pipeline.not_null_orders_coupon_amount.ab90c90625' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:19:30.409018 (Thread-12): 00:19:30  [WARNING]: Test 'test.data_pipeline.not_null_orders_bank_transfer_amount.7743500c49' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:19:30.409219 (Thread-12): 00:19:30  [WARNING]: Test 'test.data_pipeline.not_null_orders_gift_card_amount.413a0d2d7a' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:19:30.453137 (Thread-12): 00:19:30  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.data-pipeline.staging
+- models.data-pipeline
+- models.stg_deliveries
+- snapshots
+
+2022-07-12 00:19:30.458880 (Thread-12): 00:19:30  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bf809fa00>]}
+2022-07-12 00:19:33.441478 (Thread-13): handling status request
+2022-07-12 00:19:33.441933 (Thread-13): 00:19:33  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bf80acee0>]}
+2022-07-12 00:19:33.443094 (Thread-13): sending response (<Response 23476 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:19:33.660161 (Thread-14): handling status request
+2022-07-12 00:19:33.660567 (Thread-14): 00:19:33  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bf80ac3d0>]}
+2022-07-12 00:19:33.661586 (Thread-14): sending response (<Response 23476 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:19:33.691260 (Thread-15): handling ps request
+2022-07-12 00:19:33.691677 (Thread-15): 00:19:33  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bf80ac550>]}
+2022-07-12 00:19:33.692122 (Thread-15): sending response (<Response 106 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:19:33.726226 (Thread-16): handling status request
+2022-07-12 00:19:33.726642 (Thread-16): 00:19:33  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bf8078f70>]}
+2022-07-12 00:19:33.727640 (Thread-16): sending response (<Response 23476 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:19:35.248866 (Thread-17): handling status request
+2022-07-12 00:19:35.249325 (Thread-17): 00:19:35  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bf80786d0>]}
+2022-07-12 00:19:35.250336 (Thread-17): sending response (<Response 23476 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:13.318853 (Thread-18): handling status request
+2022-07-12 00:20:13.321425 (Thread-18): 00:20:13  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bd81eec40>]}
+2022-07-12 00:20:13.322445 (Thread-18): sending response (<Response 23476 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:13.512805 (Thread-19): handling status request
+2022-07-12 00:20:13.513249 (Thread-19): 00:20:13  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bf80410a0>]}
+2022-07-12 00:20:13.514240 (Thread-19): sending response (<Response 23476 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:13.559500 (Thread-20): handling cli_args request
+2022-07-12 00:20:13.559914 (Thread-20): 00:20:13  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bd81e3df0>]}
+2022-07-12 00:20:15.802817 (Thread-20): sending response (<Response 139 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:15.857712 (MainThread): 00:20:15  Unable to do partial parsing because config vars, config profile, or config target have changed
+2022-07-12 00:20:15.858195 (MainThread): 00:20:15  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e2751b0e-d5c9-4837-8394-e8b84a37b5c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffad970ab20>]}
+2022-07-12 00:20:15.958151 (MainThread): 00:20:15  Parsing macros/relations.sql
+2022-07-12 00:20:15.958973 (MainThread): 00:20:15  Parsing macros/adapters.sql
+2022-07-12 00:20:15.988462 (MainThread): 00:20:15  Parsing macros/catalog.sql
+2022-07-12 00:20:16.001101 (MainThread): 00:20:16  Parsing macros/materializations/snapshot_merge.sql
+2022-07-12 00:20:16.001821 (MainThread): 00:20:16  Parsing macros/relations.sql
+2022-07-12 00:20:16.003069 (MainThread): 00:20:16  Parsing macros/adapters.sql
+2022-07-12 00:20:16.025207 (MainThread): 00:20:16  Parsing macros/catalog.sql
+2022-07-12 00:20:16.027451 (MainThread): 00:20:16  Parsing macros/materializations/snapshot_merge.sql
+2022-07-12 00:20:16.029127 (MainThread): 00:20:16  Parsing macros/adapters/metadata.sql
+2022-07-12 00:20:16.036330 (MainThread): 00:20:16  Parsing macros/adapters/columns.sql
+2022-07-12 00:20:16.046274 (MainThread): 00:20:16  Parsing macros/adapters/freshness.sql
+2022-07-12 00:20:16.049224 (MainThread): 00:20:16  Parsing macros/adapters/persist_docs.sql
+2022-07-12 00:20:16.053720 (MainThread): 00:20:16  Parsing macros/adapters/relation.sql
+2022-07-12 00:20:16.063449 (MainThread): 00:20:16  Parsing macros/adapters/schema.sql
+2022-07-12 00:20:16.065683 (MainThread): 00:20:16  Parsing macros/adapters/indexes.sql
+2022-07-12 00:20:16.068465 (MainThread): 00:20:16  Parsing macros/get_custom_name/get_custom_schema.sql
+2022-07-12 00:20:16.070906 (MainThread): 00:20:16  Parsing macros/get_custom_name/get_custom_alias.sql
+2022-07-12 00:20:16.072489 (MainThread): 00:20:16  Parsing macros/get_custom_name/get_custom_database.sql
+2022-07-12 00:20:16.074034 (MainThread): 00:20:16  Parsing macros/etc/datetime.sql
+2022-07-12 00:20:16.082533 (MainThread): 00:20:16  Parsing macros/etc/statement.sql
+2022-07-12 00:20:16.086907 (MainThread): 00:20:16  Parsing macros/generic_test_sql/unique.sql
+2022-07-12 00:20:16.087773 (MainThread): 00:20:16  Parsing macros/generic_test_sql/not_null.sql
+2022-07-12 00:20:16.088321 (MainThread): 00:20:16  Parsing macros/generic_test_sql/accepted_values.sql
+2022-07-12 00:20:16.116417 (Thread-21): handling poll request
+2022-07-12 00:20:16.116836 (Thread-21): 00:20:16  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bd8183790>]}
+2022-07-12 00:20:16.117856 (Thread-21): sending response (<Response 7535 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:16.089655 (MainThread): 00:20:16  Parsing macros/generic_test_sql/relationships.sql
+2022-07-12 00:20:16.090486 (MainThread): 00:20:16  Parsing macros/materializations/configs.sql
+2022-07-12 00:20:16.092846 (MainThread): 00:20:16  Parsing macros/materializations/hooks.sql
+2022-07-12 00:20:16.096583 (MainThread): 00:20:16  Parsing macros/materializations/models/table/table.sql
+2022-07-12 00:20:16.104171 (MainThread): 00:20:16  Parsing macros/materializations/models/table/create_table_as.sql
+2022-07-12 00:20:16.107012 (MainThread): 00:20:16  Parsing macros/materializations/models/view/create_or_replace_view.sql
+2022-07-12 00:20:16.109752 (MainThread): 00:20:16  Parsing macros/materializations/models/view/helpers.sql
+2022-07-12 00:20:16.111029 (MainThread): 00:20:16  Parsing macros/materializations/models/view/create_view_as.sql
+2022-07-12 00:20:16.113369 (MainThread): 00:20:16  Parsing macros/materializations/models/view/view.sql
+2022-07-12 00:20:16.120520 (MainThread): 00:20:16  Parsing macros/materializations/models/incremental/incremental.sql
+2022-07-12 00:20:16.130615 (MainThread): 00:20:16  Parsing macros/materializations/models/incremental/on_schema_change.sql
+2022-07-12 00:20:16.146351 (MainThread): 00:20:16  Parsing macros/materializations/models/incremental/is_incremental.sql
+2022-07-12 00:20:16.147891 (MainThread): 00:20:16  Parsing macros/materializations/models/incremental/merge.sql
+2022-07-12 00:20:16.159339 (MainThread): 00:20:16  Parsing macros/materializations/models/incremental/column_helpers.sql
+2022-07-12 00:20:16.163934 (MainThread): 00:20:16  Parsing macros/materializations/seeds/helpers.sql
+2022-07-12 00:20:16.180589 (MainThread): 00:20:16  Parsing macros/materializations/seeds/seed.sql
+2022-07-12 00:20:16.186840 (MainThread): 00:20:16  Parsing macros/materializations/tests/helpers.sql
+2022-07-12 00:20:16.188615 (MainThread): 00:20:16  Parsing macros/materializations/tests/test.sql
+2022-07-12 00:20:16.193110 (MainThread): 00:20:16  Parsing macros/materializations/tests/where_subquery.sql
+2022-07-12 00:20:16.194882 (MainThread): 00:20:16  Parsing macros/materializations/snapshots/helpers.sql
+2022-07-12 00:20:16.206018 (MainThread): 00:20:16  Parsing macros/materializations/snapshots/strategies.sql
+2022-07-12 00:20:16.223163 (MainThread): 00:20:16  Parsing macros/materializations/snapshots/snapshot_merge.sql
+2022-07-12 00:20:16.224872 (MainThread): 00:20:16  Parsing macros/materializations/snapshots/snapshot.sql
+2022-07-12 00:20:16.237025 (MainThread): 00:20:16  Parsing tests/generic/builtin.sql
+2022-07-12 00:20:16.429161 (MainThread): 00:20:16  1699: static parser successfully parsed facts/deliveries.sql
+2022-07-12 00:20:16.441440 (MainThread): 00:20:16  1699: static parser successfully parsed dimensions/robot_dimension.sql
+2022-07-12 00:20:16.443796 (MainThread): 00:20:16  1699: static parser successfully parsed dimensions/merchant_dimension.sql
+2022-07-12 00:20:16.446128 (MainThread): 00:20:16  1699: static parser successfully parsed dimensions/pilot_dimension.sql
+2022-07-12 00:20:16.448211 (MainThread): 00:20:16  1699: static parser successfully parsed staging/stg_deliveries/stg_deliveres.sql
+2022-07-12 00:20:16.450532 (MainThread): 00:20:16  1699: static parser successfully parsed staging/stg_deliveries/stg_attempts.sql
+2022-07-12 00:20:16.475787 (MainThread): 00:20:16  [WARNING]: Did not find matching node for patch with name 'customers' in the 'models' section of file 'models/schema.yml'
+2022-07-12 00:20:16.480480 (MainThread): 00:20:16  [WARNING]: Did not find matching node for patch with name 'orders' in the 'models' section of file 'models/schema.yml'
+2022-07-12 00:20:16.545512 (MainThread): 00:20:16  [WARNING]: Test 'test.data_pipeline.unique_customers_customer_id.c5af1ff4b1' (models/schema.yml) depends on a node named 'customers' which was not found
+2022-07-12 00:20:16.545667 (MainThread): 00:20:16  [WARNING]: Test 'test.data_pipeline.not_null_customers_customer_id.5c9bf9911d' (models/schema.yml) depends on a node named 'customers' which was not found
+2022-07-12 00:20:16.545760 (MainThread): 00:20:16  [WARNING]: Test 'test.data_pipeline.unique_orders_order_id.fed79b3a6e' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:20:16.545840 (MainThread): 00:20:16  [WARNING]: Test 'test.data_pipeline.not_null_orders_order_id.cf6c17daed' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:20:16.545917 (MainThread): 00:20:16  [WARNING]: Test 'test.data_pipeline.not_null_orders_customer_id.c5f02694af' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:20:16.545991 (MainThread): 00:20:16  [WARNING]: Test 'test.data_pipeline.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2' (models/schema.yml) depends on a node named 'customers' which was not found
+2022-07-12 00:20:16.546064 (MainThread): 00:20:16  [WARNING]: Test 'test.data_pipeline.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:20:16.546140 (MainThread): 00:20:16  [WARNING]: Test 'test.data_pipeline.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:20:16.546212 (MainThread): 00:20:16  [WARNING]: Test 'test.data_pipeline.not_null_orders_amount.106140f9fd' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:20:16.546284 (MainThread): 00:20:16  [WARNING]: Test 'test.data_pipeline.not_null_orders_credit_card_amount.d3ca593b59' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:20:16.546356 (MainThread): 00:20:16  [WARNING]: Test 'test.data_pipeline.not_null_orders_coupon_amount.ab90c90625' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:20:16.546429 (MainThread): 00:20:16  [WARNING]: Test 'test.data_pipeline.not_null_orders_bank_transfer_amount.7743500c49' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:20:16.546499 (MainThread): 00:20:16  [WARNING]: Test 'test.data_pipeline.not_null_orders_gift_card_amount.413a0d2d7a' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:20:16.596780 (MainThread): 00:20:16  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.data-pipeline.staging
+- models.data-pipeline
+- models.stg_deliveries
+- snapshots
+
+2022-07-12 00:20:16.602158 (MainThread): 00:20:16  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e2751b0e-d5c9-4837-8394-e8b84a37b5c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffad8188dc0>]}
+2022-07-12 00:20:16.633440 (MainThread): 00:20:16  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e2751b0e-d5c9-4837-8394-e8b84a37b5c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffad960f910>]}
+2022-07-12 00:20:16.633806 (MainThread): 00:20:16  Found 6 models, 0 tests, 0 snapshots, 0 analyses, 191 macros, 0 operations, 0 seed files, 6 sources, 0 exposures, 0 metrics
+2022-07-12 00:20:16.635094 (MainThread): 00:20:16  
+2022-07-12 00:20:16.635222 (MainThread): 00:20:16  [WARNING]: Nothing to do. Try checking your model configs and model specification args
+2022-07-12 00:20:16.678984 (MainThread): 00:20:16  
+2022-07-12 00:20:16.679211 (MainThread): 00:20:16  Completed successfully
+2022-07-12 00:20:16.679306 (MainThread): 00:20:16  
+2022-07-12 00:20:16.679394 (MainThread): 00:20:16  Done. PASS=0 WARN=0 ERROR=0 SKIP=0 TOTAL=0
+2022-07-12 00:20:17.355246 (Thread-22): handling poll request
+2022-07-12 00:20:17.355684 (Thread-22): 00:20:17  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bf803e400>]}
+2022-07-12 00:20:17.356782 (Thread-22): sending response (<Response 19755 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:17.925628 (Thread-23): handling status request
+2022-07-12 00:20:17.926055 (Thread-23): 00:20:17  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bf803e5b0>]}
+2022-07-12 00:20:17.927217 (Thread-23): sending response (<Response 23476 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:17.953431 (Thread-24): handling status request
+2022-07-12 00:20:17.953828 (Thread-24): 00:20:17  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bf803e970>]}
+2022-07-12 00:20:17.954847 (Thread-24): sending response (<Response 23476 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:29.846735 (Thread-25): handling status request
+2022-07-12 00:20:29.849031 (Thread-25): 00:20:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bd8193430>]}
+2022-07-12 00:20:29.850117 (Thread-25): sending response (<Response 23476 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:30.092168 (Thread-26): handling status request
+2022-07-12 00:20:30.092582 (Thread-26): 00:20:30  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bd8193520>]}
+2022-07-12 00:20:30.093685 (Thread-26): sending response (<Response 23476 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:30.116804 (Thread-27): handling cli_args request
+2022-07-12 00:20:30.117228 (Thread-27): 00:20:30  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bd8193640>]}
+2022-07-12 00:20:32.342611 (Thread-27): sending response (<Response 139 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:32.485816 (MainThread): 00:20:32  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2022-07-12 00:20:32.486386 (MainThread): 00:20:32  Partial parsing enabled, no changes found, skipping parsing
+2022-07-12 00:20:32.487102 (MainThread): 00:20:32  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.stg_deliveries
+- models.data-pipeline.staging
+- models.data-pipeline
+- snapshots
+
+2022-07-12 00:20:32.493469 (MainThread): 00:20:32  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7060f3c2-d2cf-47ec-a048-e0830d1524c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0980f4bd00>]}
+2022-07-12 00:20:32.519778 (MainThread): 00:20:32  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7060f3c2-d2cf-47ec-a048-e0830d1524c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0981047bb0>]}
+2022-07-12 00:20:32.520154 (MainThread): 00:20:32  Found 6 models, 0 tests, 0 snapshots, 0 analyses, 191 macros, 0 operations, 0 seed files, 6 sources, 0 exposures, 0 metrics
+2022-07-12 00:20:32.521957 (MainThread): 00:20:32  
+2022-07-12 00:20:32.522293 (MainThread): 00:20:32  Acquiring new redshift connection "master"
+2022-07-12 00:20:32.523469 (ThreadPoolExecutor-0_0): 00:20:32  Acquiring new redshift connection "list_dw"
+2022-07-12 00:20:32.534010 (ThreadPoolExecutor-0_0): 00:20:32  Using redshift connection "list_dw"
+2022-07-12 00:20:32.534123 (ThreadPoolExecutor-0_0): 00:20:32  On list_dw: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "connection_name": "list_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+2022-07-12 00:20:32.534210 (ThreadPoolExecutor-0_0): 00:20:32  Opening a new connection, currently in state init
+2022-07-12 00:20:32.534294 (ThreadPoolExecutor-0_0): 00:20:32  Redshift adapter: Connecting to Redshift using 'database' credentials
+2022-07-12 00:20:32.534759 (ThreadPoolExecutor-0_1): 00:20:32  Acquiring new redshift connection "list_dw"
+2022-07-12 00:20:32.536276 (ThreadPoolExecutor-0_1): 00:20:32  Using redshift connection "list_dw"
+2022-07-12 00:20:32.536381 (ThreadPoolExecutor-0_1): 00:20:32  On list_dw: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "connection_name": "list_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+2022-07-12 00:20:32.536465 (ThreadPoolExecutor-0_1): 00:20:32  Opening a new connection, currently in state init
+2022-07-12 00:20:32.536541 (ThreadPoolExecutor-0_1): 00:20:32  Redshift adapter: Connecting to Redshift using 'database' credentials
+2022-07-12 00:20:32.537161 (ThreadPoolExecutor-0_2): 00:20:32  Acquiring new redshift connection "list_dw"
+2022-07-12 00:20:32.538498 (ThreadPoolExecutor-0_2): 00:20:32  Using redshift connection "list_dw"
+2022-07-12 00:20:32.538597 (ThreadPoolExecutor-0_2): 00:20:32  On list_dw: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "connection_name": "list_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+2022-07-12 00:20:32.538679 (ThreadPoolExecutor-0_2): 00:20:32  Opening a new connection, currently in state init
+2022-07-12 00:20:32.538753 (ThreadPoolExecutor-0_2): 00:20:32  Redshift adapter: Connecting to Redshift using 'database' credentials
+2022-07-12 00:20:32.539360 (ThreadPoolExecutor-0_3): 00:20:32  Acquiring new redshift connection "list_dw"
+2022-07-12 00:20:32.540701 (ThreadPoolExecutor-0_3): 00:20:32  Using redshift connection "list_dw"
+2022-07-12 00:20:32.540800 (ThreadPoolExecutor-0_3): 00:20:32  On list_dw: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "connection_name": "list_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+2022-07-12 00:20:32.540884 (ThreadPoolExecutor-0_3): 00:20:32  Opening a new connection, currently in state init
+2022-07-12 00:20:32.540984 (ThreadPoolExecutor-0_3): 00:20:32  Redshift adapter: Connecting to Redshift using 'database' credentials
+2022-07-12 00:20:32.644681 (Thread-28): handling poll request
+2022-07-12 00:20:32.645188 (Thread-28): 00:20:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bd8146430>]}
+2022-07-12 00:20:32.646164 (Thread-28): sending response (<Response 9982 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:33.135880 (ThreadPoolExecutor-0_3): 00:20:33  SQL status: SELECT in 0.59 seconds
+2022-07-12 00:20:33.137356 (ThreadPoolExecutor-0_3): 00:20:33  On list_dw: Close
+2022-07-12 00:20:33.168945 (ThreadPoolExecutor-0_2): 00:20:33  SQL status: SELECT in 0.63 seconds
+2022-07-12 00:20:33.170368 (ThreadPoolExecutor-0_2): 00:20:33  On list_dw: Close
+2022-07-12 00:20:33.192065 (ThreadPoolExecutor-0_1): 00:20:33  SQL status: SELECT in 0.66 seconds
+2022-07-12 00:20:33.193496 (ThreadPoolExecutor-0_1): 00:20:33  On list_dw: Close
+2022-07-12 00:20:33.193810 (ThreadPoolExecutor-0_0): 00:20:33  SQL status: SELECT in 0.66 seconds
+2022-07-12 00:20:33.194962 (ThreadPoolExecutor-0_0): 00:20:33  On list_dw: Close
+2022-07-12 00:20:33.196062 (ThreadPoolExecutor-0_3): 00:20:33  Acquiring new redshift connection "create_dw_dbt"
+2022-07-12 00:20:33.196278 (ThreadPoolExecutor-0_3): 00:20:33  Acquiring new redshift connection "create_dw_dbt"
+2022-07-12 00:20:33.196446 (ThreadPoolExecutor-0_3): 00:20:33  Creating schema "_ReferenceKey(database='dw', schema='dbt', identifier=None)"
+2022-07-12 00:20:33.201221 (ThreadPoolExecutor-0_2): 00:20:33  Acquiring new redshift connection "create_dw_dbt_stg"
+2022-07-12 00:20:33.201450 (ThreadPoolExecutor-0_2): 00:20:33  Acquiring new redshift connection "create_dw_dbt_stg"
+2022-07-12 00:20:33.201605 (ThreadPoolExecutor-0_2): 00:20:33  Creating schema "_ReferenceKey(database='dw', schema='dbt_stg', identifier=None)"
+2022-07-12 00:20:33.205350 (ThreadPoolExecutor-0_2): 00:20:33  Using redshift connection "create_dw_dbt_stg"
+2022-07-12 00:20:33.205466 (ThreadPoolExecutor-0_2): 00:20:33  On create_dw_dbt_stg: BEGIN
+2022-07-12 00:20:33.205549 (ThreadPoolExecutor-0_2): 00:20:33  Opening a new connection, currently in state closed
+2022-07-12 00:20:33.205629 (ThreadPoolExecutor-0_2): 00:20:33  Redshift adapter: Connecting to Redshift using 'database' credentials
+2022-07-12 00:20:33.207472 (ThreadPoolExecutor-0_3): 00:20:33  Using redshift connection "create_dw_dbt"
+2022-07-12 00:20:33.207583 (ThreadPoolExecutor-0_3): 00:20:33  On create_dw_dbt: BEGIN
+2022-07-12 00:20:33.207664 (ThreadPoolExecutor-0_3): 00:20:33  Opening a new connection, currently in state closed
+2022-07-12 00:20:33.207742 (ThreadPoolExecutor-0_3): 00:20:33  Redshift adapter: Connecting to Redshift using 'database' credentials
+2022-07-12 00:20:33.208164 (ThreadPoolExecutor-0_1): 00:20:33  Acquiring new redshift connection "create_dw_dbt_dimensions"
+2022-07-12 00:20:33.208379 (ThreadPoolExecutor-0_1): 00:20:33  Acquiring new redshift connection "create_dw_dbt_dimensions"
+2022-07-12 00:20:33.208519 (ThreadPoolExecutor-0_1): 00:20:33  Creating schema "_ReferenceKey(database='dw', schema='dbt_dimensions', identifier=None)"
+2022-07-12 00:20:33.210027 (ThreadPoolExecutor-0_1): 00:20:33  Using redshift connection "create_dw_dbt_dimensions"
+2022-07-12 00:20:33.210129 (ThreadPoolExecutor-0_1): 00:20:33  On create_dw_dbt_dimensions: BEGIN
+2022-07-12 00:20:33.210207 (ThreadPoolExecutor-0_1): 00:20:33  Opening a new connection, currently in state closed
+2022-07-12 00:20:33.210284 (ThreadPoolExecutor-0_1): 00:20:33  Redshift adapter: Connecting to Redshift using 'database' credentials
+2022-07-12 00:20:33.210709 (ThreadPoolExecutor-0_0): 00:20:33  Acquiring new redshift connection "create_dw_dbt_facts"
+2022-07-12 00:20:33.210923 (ThreadPoolExecutor-0_0): 00:20:33  Acquiring new redshift connection "create_dw_dbt_facts"
+2022-07-12 00:20:33.211061 (ThreadPoolExecutor-0_0): 00:20:33  Creating schema "_ReferenceKey(database='dw', schema='dbt_facts', identifier=None)"
+2022-07-12 00:20:33.212479 (ThreadPoolExecutor-0_0): 00:20:33  Using redshift connection "create_dw_dbt_facts"
+2022-07-12 00:20:33.212579 (ThreadPoolExecutor-0_0): 00:20:33  On create_dw_dbt_facts: BEGIN
+2022-07-12 00:20:33.212657 (ThreadPoolExecutor-0_0): 00:20:33  Opening a new connection, currently in state closed
+2022-07-12 00:20:33.212732 (ThreadPoolExecutor-0_0): 00:20:33  Redshift adapter: Connecting to Redshift using 'database' credentials
+2022-07-12 00:20:33.841907 (ThreadPoolExecutor-0_0): 00:20:33  SQL status: BEGIN in 0.63 seconds
+2022-07-12 00:20:33.842078 (ThreadPoolExecutor-0_0): 00:20:33  Using redshift connection "create_dw_dbt_facts"
+2022-07-12 00:20:33.842161 (ThreadPoolExecutor-0_0): 00:20:33  On create_dw_dbt_facts: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "connection_name": "create_dw_dbt_facts"} */
+create schema if not exists "dbt_facts"
+2022-07-12 00:20:33.844693 (ThreadPoolExecutor-0_3): 00:20:33  SQL status: BEGIN in 0.64 seconds
+2022-07-12 00:20:33.844821 (ThreadPoolExecutor-0_3): 00:20:33  Using redshift connection "create_dw_dbt"
+2022-07-12 00:20:33.844899 (ThreadPoolExecutor-0_3): 00:20:33  On create_dw_dbt: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "connection_name": "create_dw_dbt"} */
+create schema if not exists "dbt"
+2022-07-12 00:20:33.845533 (ThreadPoolExecutor-0_1): 00:20:33  SQL status: BEGIN in 0.64 seconds
+2022-07-12 00:20:33.845660 (ThreadPoolExecutor-0_1): 00:20:33  Using redshift connection "create_dw_dbt_dimensions"
+2022-07-12 00:20:33.845737 (ThreadPoolExecutor-0_1): 00:20:33  On create_dw_dbt_dimensions: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "connection_name": "create_dw_dbt_dimensions"} */
+create schema if not exists "dbt_dimensions"
+2022-07-12 00:20:33.857137 (ThreadPoolExecutor-0_2): 00:20:33  SQL status: BEGIN in 0.65 seconds
+2022-07-12 00:20:33.857283 (ThreadPoolExecutor-0_2): 00:20:33  Using redshift connection "create_dw_dbt_stg"
+2022-07-12 00:20:33.857362 (ThreadPoolExecutor-0_2): 00:20:33  On create_dw_dbt_stg: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "connection_name": "create_dw_dbt_stg"} */
+create schema if not exists "dbt_stg"
+2022-07-12 00:20:33.885832 (Thread-29): handling poll request
+2022-07-12 00:20:33.886224 (Thread-29): 00:20:33  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bd8157520>]}
+2022-07-12 00:20:33.887107 (Thread-29): sending response (<Response 15558 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:33.909376 (ThreadPoolExecutor-0_0): 00:20:33  SQL status: CREATE SCHEMA in 0.07 seconds
+2022-07-12 00:20:33.910305 (ThreadPoolExecutor-0_0): 00:20:33  On create_dw_dbt_facts: COMMIT
+2022-07-12 00:20:33.910425 (ThreadPoolExecutor-0_0): 00:20:33  Using redshift connection "create_dw_dbt_facts"
+2022-07-12 00:20:33.910505 (ThreadPoolExecutor-0_0): 00:20:33  On create_dw_dbt_facts: COMMIT
+2022-07-12 00:20:33.915298 (ThreadPoolExecutor-0_3): 00:20:33  SQL status: CREATE SCHEMA in 0.07 seconds
+2022-07-12 00:20:33.916122 (ThreadPoolExecutor-0_3): 00:20:33  On create_dw_dbt: COMMIT
+2022-07-12 00:20:33.916225 (ThreadPoolExecutor-0_3): 00:20:33  Using redshift connection "create_dw_dbt"
+2022-07-12 00:20:33.916302 (ThreadPoolExecutor-0_3): 00:20:33  On create_dw_dbt: COMMIT
+2022-07-12 00:20:33.916698 (ThreadPoolExecutor-0_1): 00:20:33  SQL status: CREATE SCHEMA in 0.07 seconds
+2022-07-12 00:20:33.917613 (ThreadPoolExecutor-0_1): 00:20:33  On create_dw_dbt_dimensions: COMMIT
+2022-07-12 00:20:33.917710 (ThreadPoolExecutor-0_1): 00:20:33  Using redshift connection "create_dw_dbt_dimensions"
+2022-07-12 00:20:33.917786 (ThreadPoolExecutor-0_1): 00:20:33  On create_dw_dbt_dimensions: COMMIT
+2022-07-12 00:20:33.929059 (ThreadPoolExecutor-0_2): 00:20:33  SQL status: CREATE SCHEMA in 0.07 seconds
+2022-07-12 00:20:33.929842 (ThreadPoolExecutor-0_2): 00:20:33  On create_dw_dbt_stg: COMMIT
+2022-07-12 00:20:33.929947 (ThreadPoolExecutor-0_2): 00:20:33  Using redshift connection "create_dw_dbt_stg"
+2022-07-12 00:20:33.930023 (ThreadPoolExecutor-0_2): 00:20:33  On create_dw_dbt_stg: COMMIT
+2022-07-12 00:20:34.142219 (ThreadPoolExecutor-0_0): 00:20:34  SQL status: COMMIT in 0.23 seconds
+2022-07-12 00:20:34.142425 (ThreadPoolExecutor-0_0): 00:20:34  On create_dw_dbt_facts: Close
+2022-07-12 00:20:34.143895 (ThreadPoolExecutor-0_1): 00:20:34  SQL status: COMMIT in 0.23 seconds
+2022-07-12 00:20:34.144052 (ThreadPoolExecutor-0_1): 00:20:34  On create_dw_dbt_dimensions: Close
+2022-07-12 00:20:34.149115 (ThreadPoolExecutor-0_3): 00:20:34  SQL status: COMMIT in 0.23 seconds
+2022-07-12 00:20:34.149260 (ThreadPoolExecutor-0_3): 00:20:34  On create_dw_dbt: Close
+2022-07-12 00:20:34.151274 (ThreadPoolExecutor-0_2): 00:20:34  SQL status: COMMIT in 0.22 seconds
+2022-07-12 00:20:34.151413 (ThreadPoolExecutor-0_2): 00:20:34  On create_dw_dbt_stg: Close
+2022-07-12 00:20:34.153004 (ThreadPoolExecutor-1_0): 00:20:34  Acquiring new redshift connection "list_dw_dbt"
+2022-07-12 00:20:34.158179 (ThreadPoolExecutor-1_1): 00:20:34  Acquiring new redshift connection "list_dw_dbt_stg"
+2022-07-12 00:20:34.163417 (ThreadPoolExecutor-1_2): 00:20:34  Acquiring new redshift connection "list_dw_dbt_dimensions"
+2022-07-12 00:20:34.165242 (ThreadPoolExecutor-1_2): 00:20:34  Using redshift connection "list_dw_dbt_dimensions"
+2022-07-12 00:20:34.165362 (ThreadPoolExecutor-1_2): 00:20:34  On list_dw_dbt_dimensions: BEGIN
+2022-07-12 00:20:34.165448 (ThreadPoolExecutor-1_2): 00:20:34  Opening a new connection, currently in state closed
+2022-07-12 00:20:34.165528 (ThreadPoolExecutor-1_2): 00:20:34  Redshift adapter: Connecting to Redshift using 'database' credentials
+2022-07-12 00:20:34.165910 (ThreadPoolExecutor-1_1): 00:20:34  Using redshift connection "list_dw_dbt_stg"
+2022-07-12 00:20:34.166014 (ThreadPoolExecutor-1_1): 00:20:34  On list_dw_dbt_stg: BEGIN
+2022-07-12 00:20:34.166095 (ThreadPoolExecutor-1_1): 00:20:34  Opening a new connection, currently in state closed
+2022-07-12 00:20:34.166171 (ThreadPoolExecutor-1_1): 00:20:34  Redshift adapter: Connecting to Redshift using 'database' credentials
+2022-07-12 00:20:34.167010 (ThreadPoolExecutor-1_0): 00:20:34  Using redshift connection "list_dw_dbt"
+2022-07-12 00:20:34.167112 (ThreadPoolExecutor-1_0): 00:20:34  On list_dw_dbt: BEGIN
+2022-07-12 00:20:34.167192 (ThreadPoolExecutor-1_0): 00:20:34  Opening a new connection, currently in state closed
+2022-07-12 00:20:34.167269 (ThreadPoolExecutor-1_0): 00:20:34  Redshift adapter: Connecting to Redshift using 'database' credentials
+2022-07-12 00:20:34.167803 (ThreadPoolExecutor-1_3): 00:20:34  Acquiring new redshift connection "list_dw_dbt_facts"
+2022-07-12 00:20:34.169159 (ThreadPoolExecutor-1_3): 00:20:34  Using redshift connection "list_dw_dbt_facts"
+2022-07-12 00:20:34.169258 (ThreadPoolExecutor-1_3): 00:20:34  On list_dw_dbt_facts: BEGIN
+2022-07-12 00:20:34.169337 (ThreadPoolExecutor-1_3): 00:20:34  Opening a new connection, currently in state closed
+2022-07-12 00:20:34.169411 (ThreadPoolExecutor-1_3): 00:20:34  Redshift adapter: Connecting to Redshift using 'database' credentials
+2022-07-12 00:20:34.774583 (ThreadPoolExecutor-1_2): 00:20:34  SQL status: BEGIN in 0.61 seconds
+2022-07-12 00:20:34.774763 (ThreadPoolExecutor-1_2): 00:20:34  Using redshift connection "list_dw_dbt_dimensions"
+2022-07-12 00:20:34.774846 (ThreadPoolExecutor-1_2): 00:20:34  On list_dw_dbt_dimensions: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "connection_name": "list_dw_dbt_dimensions"} */
+select
+      'dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt_dimensions'
+    union all
+    select
+      'dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt_dimensions'
+  
+2022-07-12 00:20:34.799110 (ThreadPoolExecutor-1_1): 00:20:34  SQL status: BEGIN in 0.63 seconds
+2022-07-12 00:20:34.799262 (ThreadPoolExecutor-1_1): 00:20:34  Using redshift connection "list_dw_dbt_stg"
+2022-07-12 00:20:34.799344 (ThreadPoolExecutor-1_1): 00:20:34  On list_dw_dbt_stg: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "connection_name": "list_dw_dbt_stg"} */
+select
+      'dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt_stg'
+    union all
+    select
+      'dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt_stg'
+  
+2022-07-12 00:20:34.805761 (ThreadPoolExecutor-1_0): 00:20:34  SQL status: BEGIN in 0.64 seconds
+2022-07-12 00:20:34.805920 (ThreadPoolExecutor-1_0): 00:20:34  Using redshift connection "list_dw_dbt"
+2022-07-12 00:20:34.806002 (ThreadPoolExecutor-1_0): 00:20:34  On list_dw_dbt: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "connection_name": "list_dw_dbt"} */
+select
+      'dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt'
+    union all
+    select
+      'dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt'
+  
+2022-07-12 00:20:34.808419 (ThreadPoolExecutor-1_3): 00:20:34  SQL status: BEGIN in 0.64 seconds
+2022-07-12 00:20:34.808555 (ThreadPoolExecutor-1_3): 00:20:34  Using redshift connection "list_dw_dbt_facts"
+2022-07-12 00:20:34.808634 (ThreadPoolExecutor-1_3): 00:20:34  On list_dw_dbt_facts: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "connection_name": "list_dw_dbt_facts"} */
+select
+      'dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dbt_facts'
+    union all
+    select
+      'dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dbt_facts'
+  
+2022-07-12 00:20:35.094027 (ThreadPoolExecutor-1_2): 00:20:35  SQL status: SELECT in 0.32 seconds
+2022-07-12 00:20:35.095182 (ThreadPoolExecutor-1_2): 00:20:35  On list_dw_dbt_dimensions: ROLLBACK
+2022-07-12 00:20:35.107640 (ThreadPoolExecutor-1_0): 00:20:35  SQL status: SELECT in 0.3 seconds
+2022-07-12 00:20:35.108721 (ThreadPoolExecutor-1_0): 00:20:35  On list_dw_dbt: ROLLBACK
+2022-07-12 00:20:35.117353 (Thread-30): handling poll request
+2022-07-12 00:20:35.117710 (Thread-30): 00:20:35  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bd813b670>]}
+2022-07-12 00:20:35.118666 (Thread-30): sending response (<Response 20054 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:35.119120 (ThreadPoolExecutor-1_3): 00:20:35  SQL status: SELECT in 0.31 seconds
+2022-07-12 00:20:35.120173 (ThreadPoolExecutor-1_3): 00:20:35  On list_dw_dbt_facts: ROLLBACK
+2022-07-12 00:20:35.134521 (ThreadPoolExecutor-1_1): 00:20:35  SQL status: SELECT in 0.34 seconds
+2022-07-12 00:20:35.135599 (ThreadPoolExecutor-1_1): 00:20:35  On list_dw_dbt_stg: ROLLBACK
+2022-07-12 00:20:35.160919 (ThreadPoolExecutor-1_2): 00:20:35  On list_dw_dbt_dimensions: Close
+2022-07-12 00:20:35.178995 (ThreadPoolExecutor-1_0): 00:20:35  On list_dw_dbt: Close
+2022-07-12 00:20:35.188754 (ThreadPoolExecutor-1_3): 00:20:35  On list_dw_dbt_facts: Close
+2022-07-12 00:20:35.204187 (ThreadPoolExecutor-1_1): 00:20:35  On list_dw_dbt_stg: Close
+2022-07-12 00:20:35.208586 (MainThread): 00:20:35  Using redshift connection "master"
+2022-07-12 00:20:35.208725 (MainThread): 00:20:35  On master: BEGIN
+2022-07-12 00:20:35.208815 (MainThread): 00:20:35  Opening a new connection, currently in state init
+2022-07-12 00:20:35.208898 (MainThread): 00:20:35  Redshift adapter: Connecting to Redshift using 'database' credentials
+2022-07-12 00:20:35.840444 (MainThread): 00:20:35  SQL status: BEGIN in 0.63 seconds
+2022-07-12 00:20:35.840625 (MainThread): 00:20:35  Using redshift connection "master"
+2022-07-12 00:20:35.840709 (MainThread): 00:20:35  On master: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2022-07-12 00:20:36.100032 (MainThread): 00:20:36  SQL status: SELECT in 0.26 seconds
+2022-07-12 00:20:36.101219 (MainThread): 00:20:36  On master: ROLLBACK
+2022-07-12 00:20:36.171431 (MainThread): 00:20:36  Using redshift connection "master"
+2022-07-12 00:20:36.171593 (MainThread): 00:20:36  On master: BEGIN
+2022-07-12 00:20:36.311610 (MainThread): 00:20:36  SQL status: BEGIN in 0.14 seconds
+2022-07-12 00:20:36.311804 (MainThread): 00:20:36  On master: COMMIT
+2022-07-12 00:20:36.311884 (MainThread): 00:20:36  Using redshift connection "master"
+2022-07-12 00:20:36.311961 (MainThread): 00:20:36  On master: COMMIT
+2022-07-12 00:20:36.364997 (Thread-31): handling poll request
+2022-07-12 00:20:36.365394 (Thread-31): 00:20:36  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bd815e040>]}
+2022-07-12 00:20:36.366063 (Thread-31): sending response (<Response 9066 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:36.382064 (MainThread): 00:20:36  SQL status: COMMIT in 0.07 seconds
+2022-07-12 00:20:36.382270 (MainThread): 00:20:36  On master: Close
+2022-07-12 00:20:36.382865 (MainThread): 00:20:36  Concurrency: 4 threads (target='default')
+2022-07-12 00:20:36.383017 (MainThread): 00:20:36  
+2022-07-12 00:20:36.385823 (Thread-1): 00:20:36  Began running node model.data_pipeline.deliveries
+2022-07-12 00:20:36.386124 (Thread-1): 00:20:36  1 of 6 START view model dbt_facts.deliveries.................................... [RUN]
+2022-07-12 00:20:36.386399 (Thread-1): 00:20:36  Acquiring new redshift connection "model.data_pipeline.deliveries"
+2022-07-12 00:20:36.386499 (Thread-1): 00:20:36  Began compiling node model.data_pipeline.deliveries
+2022-07-12 00:20:36.386591 (Thread-1): 00:20:36  Compiling model.data_pipeline.deliveries
+2022-07-12 00:20:36.389364 (Thread-1): 00:20:36  Writing injected SQL for node "model.data_pipeline.deliveries"
+2022-07-12 00:20:36.389617 (Thread-2): 00:20:36  Began running node model.data_pipeline.merchant_dimension
+2022-07-12 00:20:36.389880 (Thread-2): 00:20:36  2 of 6 START view model dbt_dimensions.merchant_dimension....................... [RUN]
+2022-07-12 00:20:36.390161 (Thread-2): 00:20:36  Acquiring new redshift connection "model.data_pipeline.merchant_dimension"
+2022-07-12 00:20:36.390262 (Thread-2): 00:20:36  Began compiling node model.data_pipeline.merchant_dimension
+2022-07-12 00:20:36.390349 (Thread-2): 00:20:36  Compiling model.data_pipeline.merchant_dimension
+2022-07-12 00:20:36.393012 (Thread-2): 00:20:36  Writing injected SQL for node "model.data_pipeline.merchant_dimension"
+2022-07-12 00:20:36.393262 (Thread-3): 00:20:36  Began running node model.data_pipeline.pilot_dimension
+2022-07-12 00:20:36.393521 (Thread-3): 00:20:36  3 of 6 START view model dbt_dimensions.pilot_dimension.......................... [RUN]
+2022-07-12 00:20:36.393799 (Thread-3): 00:20:36  Acquiring new redshift connection "model.data_pipeline.pilot_dimension"
+2022-07-12 00:20:36.393902 (Thread-3): 00:20:36  Began compiling node model.data_pipeline.pilot_dimension
+2022-07-12 00:20:36.393986 (Thread-3): 00:20:36  Compiling model.data_pipeline.pilot_dimension
+2022-07-12 00:20:36.396497 (Thread-3): 00:20:36  Writing injected SQL for node "model.data_pipeline.pilot_dimension"
+2022-07-12 00:20:36.397038 (Thread-4): 00:20:36  Began running node model.data_pipeline.robot_dimension
+2022-07-12 00:20:36.397271 (Thread-4): 00:20:36  4 of 6 START table model dbt_dimensions.robot_dimension......................... [RUN]
+2022-07-12 00:20:36.397521 (Thread-4): 00:20:36  Acquiring new redshift connection "model.data_pipeline.robot_dimension"
+2022-07-12 00:20:36.397615 (Thread-4): 00:20:36  Began compiling node model.data_pipeline.robot_dimension
+2022-07-12 00:20:36.397701 (Thread-4): 00:20:36  Compiling model.data_pipeline.robot_dimension
+2022-07-12 00:20:36.400158 (Thread-4): 00:20:36  Writing injected SQL for node "model.data_pipeline.robot_dimension"
+2022-07-12 00:20:36.435552 (Thread-2): 00:20:36  finished collecting timing info
+2022-07-12 00:20:36.435783 (Thread-2): 00:20:36  Began executing node model.data_pipeline.merchant_dimension
+2022-07-12 00:20:36.440941 (Thread-1): 00:20:36  finished collecting timing info
+2022-07-12 00:20:36.441155 (Thread-1): 00:20:36  Began executing node model.data_pipeline.deliveries
+2022-07-12 00:20:36.480102 (Thread-2): 00:20:36  Writing runtime SQL for node "model.data_pipeline.merchant_dimension"
+2022-07-12 00:20:36.480380 (Thread-4): 00:20:36  finished collecting timing info
+2022-07-12 00:20:36.480546 (Thread-4): 00:20:36  Began executing node model.data_pipeline.robot_dimension
+2022-07-12 00:20:36.487467 (Thread-1): 00:20:36  Writing runtime SQL for node "model.data_pipeline.deliveries"
+2022-07-12 00:20:36.498196 (Thread-3): 00:20:36  finished collecting timing info
+2022-07-12 00:20:36.498371 (Thread-3): 00:20:36  Began executing node model.data_pipeline.pilot_dimension
+2022-07-12 00:20:36.500373 (Thread-3): 00:20:36  Writing runtime SQL for node "model.data_pipeline.pilot_dimension"
+2022-07-12 00:20:36.513858 (Thread-4): 00:20:36  Writing runtime SQL for node "model.data_pipeline.robot_dimension"
+2022-07-12 00:20:36.557694 (Thread-2): 00:20:36  Using redshift connection "model.data_pipeline.merchant_dimension"
+2022-07-12 00:20:36.557879 (Thread-2): 00:20:36  On model.data_pipeline.merchant_dimension: BEGIN
+2022-07-12 00:20:36.557980 (Thread-2): 00:20:36  Opening a new connection, currently in state closed
+2022-07-12 00:20:36.558069 (Thread-2): 00:20:36  Redshift adapter: Connecting to Redshift using 'database' credentials
+2022-07-12 00:20:36.564258 (Thread-3): 00:20:36  Using redshift connection "model.data_pipeline.pilot_dimension"
+2022-07-12 00:20:36.564435 (Thread-3): 00:20:36  On model.data_pipeline.pilot_dimension: BEGIN
+2022-07-12 00:20:36.564533 (Thread-3): 00:20:36  Opening a new connection, currently in state closed
+2022-07-12 00:20:36.564620 (Thread-3): 00:20:36  Redshift adapter: Connecting to Redshift using 'database' credentials
+2022-07-12 00:20:36.568095 (Thread-4): 00:20:36  Using redshift connection "model.data_pipeline.robot_dimension"
+2022-07-12 00:20:36.568254 (Thread-4): 00:20:36  On model.data_pipeline.robot_dimension: BEGIN
+2022-07-12 00:20:36.568346 (Thread-4): 00:20:36  Opening a new connection, currently in state closed
+2022-07-12 00:20:36.568429 (Thread-4): 00:20:36  Redshift adapter: Connecting to Redshift using 'database' credentials
+2022-07-12 00:20:36.568939 (Thread-1): 00:20:36  Using redshift connection "model.data_pipeline.deliveries"
+2022-07-12 00:20:36.569091 (Thread-1): 00:20:36  On model.data_pipeline.deliveries: BEGIN
+2022-07-12 00:20:36.569177 (Thread-1): 00:20:36  Opening a new connection, currently in state closed
+2022-07-12 00:20:36.569254 (Thread-1): 00:20:36  Redshift adapter: Connecting to Redshift using 'database' credentials
+2022-07-12 00:20:37.141763 (Thread-4): 00:20:37  SQL status: BEGIN in 0.57 seconds
+2022-07-12 00:20:37.141945 (Thread-4): 00:20:37  Using redshift connection "model.data_pipeline.robot_dimension"
+2022-07-12 00:20:37.142029 (Thread-4): 00:20:37  On model.data_pipeline.robot_dimension: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "node_id": "model.data_pipeline.robot_dimension"} */
+
+
+  create  table
+    "dw"."dbt_dimensions"."robot_dimension__dbt_tmp"
+    
+    
+    
+  as (
+    
+
+
+with 
+source as (
+    select * from "dw"."operations_rds_public"."robot"
+
+)
+select * from source
+  );
+2022-07-12 00:20:37.147687 (Thread-2): 00:20:37  SQL status: BEGIN in 0.59 seconds
+2022-07-12 00:20:37.147851 (Thread-2): 00:20:37  Using redshift connection "model.data_pipeline.merchant_dimension"
+2022-07-12 00:20:37.147935 (Thread-2): 00:20:37  On model.data_pipeline.merchant_dimension: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "node_id": "model.data_pipeline.merchant_dimension"} */
+
+
+  create view "dw"."dbt_dimensions"."merchant_dimension__dbt_tmp" as (
+    
+
+
+with 
+source as (
+    select * from "dw"."operations_rds_public"."pilot"
+
+)
+select * from source
+  ) ;
+
+2022-07-12 00:20:37.203603 (Thread-3): 00:20:37  SQL status: BEGIN in 0.64 seconds
+2022-07-12 00:20:37.203782 (Thread-3): 00:20:37  Using redshift connection "model.data_pipeline.pilot_dimension"
+2022-07-12 00:20:37.203865 (Thread-3): 00:20:37  On model.data_pipeline.pilot_dimension: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "node_id": "model.data_pipeline.pilot_dimension"} */
+
+
+  create view "dw"."dbt_dimensions"."pilot_dimension__dbt_tmp" as (
+    
+
+
+with 
+source as (
+    select * from "dw"."operations_rds_public"."pilot"
+
+)
+select * from source
+  ) ;
+
+2022-07-12 00:20:37.224577 (Thread-2): 00:20:37  SQL status: CREATE VIEW in 0.08 seconds
+2022-07-12 00:20:37.230712 (Thread-2): 00:20:37  Using redshift connection "model.data_pipeline.merchant_dimension"
+2022-07-12 00:20:37.230853 (Thread-2): 00:20:37  On model.data_pipeline.merchant_dimension: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "node_id": "model.data_pipeline.merchant_dimension"} */
+alter table "dw"."dbt_dimensions"."merchant_dimension__dbt_tmp" rename to "merchant_dimension"
+2022-07-12 00:20:37.252755 (Thread-1): 00:20:37  SQL status: BEGIN in 0.68 seconds
+2022-07-12 00:20:37.252911 (Thread-1): 00:20:37  Using redshift connection "model.data_pipeline.deliveries"
+2022-07-12 00:20:37.253008 (Thread-1): 00:20:37  On model.data_pipeline.deliveries: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "node_id": "model.data_pipeline.deliveries"} */
+
+
+  create view "dw"."dbt_facts"."deliveries__dbt_tmp" as (
+    
+
+
+with 
+source as (
+    select * from "dw"."operations_rds_public"."task"
+
+)
+select * from source
+  ) ;
+
+2022-07-12 00:20:37.273760 (Thread-3): 00:20:37  SQL status: CREATE VIEW in 0.07 seconds
+2022-07-12 00:20:37.276008 (Thread-3): 00:20:37  Using redshift connection "model.data_pipeline.pilot_dimension"
+2022-07-12 00:20:37.276144 (Thread-3): 00:20:37  On model.data_pipeline.pilot_dimension: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "node_id": "model.data_pipeline.pilot_dimension"} */
+alter table "dw"."dbt_dimensions"."pilot_dimension__dbt_tmp" rename to "pilot_dimension"
+2022-07-12 00:20:37.295415 (Thread-2): 00:20:37  SQL status: ALTER TABLE in 0.06 seconds
+2022-07-12 00:20:37.303083 (Thread-2): 00:20:37  On model.data_pipeline.merchant_dimension: COMMIT
+2022-07-12 00:20:37.303224 (Thread-2): 00:20:37  Using redshift connection "model.data_pipeline.merchant_dimension"
+2022-07-12 00:20:37.303303 (Thread-2): 00:20:37  On model.data_pipeline.merchant_dimension: COMMIT
+2022-07-12 00:20:37.343109 (Thread-3): 00:20:37  SQL status: ALTER TABLE in 0.07 seconds
+2022-07-12 00:20:37.344412 (Thread-3): 00:20:37  On model.data_pipeline.pilot_dimension: COMMIT
+2022-07-12 00:20:37.344525 (Thread-3): 00:20:37  Using redshift connection "model.data_pipeline.pilot_dimension"
+2022-07-12 00:20:37.344601 (Thread-3): 00:20:37  On model.data_pipeline.pilot_dimension: COMMIT
+2022-07-12 00:20:37.347763 (Thread-1): 00:20:37  SQL status: CREATE VIEW in 0.09 seconds
+2022-07-12 00:20:37.349979 (Thread-1): 00:20:37  Using redshift connection "model.data_pipeline.deliveries"
+2022-07-12 00:20:37.350091 (Thread-1): 00:20:37  On model.data_pipeline.deliveries: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "node_id": "model.data_pipeline.deliveries"} */
+alter table "dw"."dbt_facts"."deliveries__dbt_tmp" rename to "deliveries"
+2022-07-12 00:20:37.426227 (Thread-1): 00:20:37  SQL status: ALTER TABLE in 0.08 seconds
+2022-07-12 00:20:37.427497 (Thread-1): 00:20:37  On model.data_pipeline.deliveries: COMMIT
+2022-07-12 00:20:37.427623 (Thread-1): 00:20:37  Using redshift connection "model.data_pipeline.deliveries"
+2022-07-12 00:20:37.427701 (Thread-1): 00:20:37  On model.data_pipeline.deliveries: COMMIT
+2022-07-12 00:20:37.450637 (Thread-2): 00:20:37  SQL status: COMMIT in 0.15 seconds
+2022-07-12 00:20:37.451006 (Thread-2): 00:20:37  Using redshift connection "model.data_pipeline.merchant_dimension"
+2022-07-12 00:20:37.451104 (Thread-2): 00:20:37  On model.data_pipeline.merchant_dimension: BEGIN
+2022-07-12 00:20:37.514916 (Thread-2): 00:20:37  SQL status: BEGIN in 0.06 seconds
+2022-07-12 00:20:37.519888 (Thread-2): 00:20:37  Using redshift connection "model.data_pipeline.merchant_dimension"
+2022-07-12 00:20:37.520032 (Thread-2): 00:20:37  On model.data_pipeline.merchant_dimension: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "node_id": "model.data_pipeline.merchant_dimension"} */
+drop view if exists "dw"."dbt_dimensions"."merchant_dimension__dbt_backup" cascade
+2022-07-12 00:20:37.583771 (Thread-2): 00:20:37  SQL status: DROP VIEW in 0.06 seconds
+2022-07-12 00:20:37.584682 (Thread-2): 00:20:37  On model.data_pipeline.merchant_dimension: COMMIT
+2022-07-12 00:20:37.584803 (Thread-2): 00:20:37  Using redshift connection "model.data_pipeline.merchant_dimension"
+2022-07-12 00:20:37.584882 (Thread-2): 00:20:37  On model.data_pipeline.merchant_dimension: COMMIT
+2022-07-12 00:20:37.620104 (Thread-3): 00:20:37  SQL status: COMMIT in 0.28 seconds
+2022-07-12 00:20:37.627823 (Thread-1): 00:20:37  SQL status: COMMIT in 0.2 seconds
+2022-07-12 00:20:37.635627 (Thread-32): handling poll request
+2022-07-12 00:20:37.636018 (Thread-32): 00:20:37  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bd8100040>]}
+2022-07-12 00:20:37.637435 (Thread-32): sending response (<Response 39517 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:37.697631 (Thread-2): 00:20:37  SQL status: COMMIT in 0.11 seconds
+2022-07-12 00:20:37.697828 (Thread-2): 00:20:37  Using redshift connection "model.data_pipeline.merchant_dimension"
+2022-07-12 00:20:37.697912 (Thread-2): 00:20:37  On model.data_pipeline.merchant_dimension: BEGIN
+2022-07-12 00:20:37.761796 (Thread-2): 00:20:37  SQL status: BEGIN in 0.06 seconds
+2022-07-12 00:20:37.762456 (Thread-2): 00:20:37  finished collecting timing info
+2022-07-12 00:20:37.762629 (Thread-2): 00:20:37  On model.data_pipeline.merchant_dimension: ROLLBACK
+2022-07-12 00:20:37.762925 (Thread-3): 00:20:37  Using redshift connection "model.data_pipeline.pilot_dimension"
+2022-07-12 00:20:37.763060 (Thread-3): 00:20:37  On model.data_pipeline.pilot_dimension: BEGIN
+2022-07-12 00:20:37.826169 (Thread-2): 00:20:37  On model.data_pipeline.merchant_dimension: Close
+2022-07-12 00:20:37.826856 (Thread-2): 00:20:37  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7060f3c2-d2cf-47ec-a048-e0830d1524c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0980638490>]}
+2022-07-12 00:20:37.827327 (Thread-2): 00:20:37  2 of 6 OK created view model dbt_dimensions.merchant_dimension.................. [CREATE VIEW in 1.44s]
+2022-07-12 00:20:37.827456 (Thread-2): 00:20:37  Finished running node model.data_pipeline.merchant_dimension
+2022-07-12 00:20:37.827613 (Thread-2): 00:20:37  Began running node model.data_pipeline.stg_attempts
+2022-07-12 00:20:37.827820 (Thread-2): 00:20:37  5 of 6 START view model dbt_stg.stg_attempts.................................... [RUN]
+2022-07-12 00:20:37.828071 (Thread-2): 00:20:37  Acquiring new redshift connection "model.data_pipeline.stg_attempts"
+2022-07-12 00:20:37.828166 (Thread-2): 00:20:37  Began compiling node model.data_pipeline.stg_attempts
+2022-07-12 00:20:37.828257 (Thread-2): 00:20:37  Compiling model.data_pipeline.stg_attempts
+2022-07-12 00:20:37.831138 (Thread-2): 00:20:37  Writing injected SQL for node "model.data_pipeline.stg_attempts"
+2022-07-12 00:20:37.831540 (Thread-3): 00:20:37  SQL status: BEGIN in 0.07 seconds
+2022-07-12 00:20:37.832892 (Thread-3): 00:20:37  Using redshift connection "model.data_pipeline.pilot_dimension"
+2022-07-12 00:20:37.833039 (Thread-3): 00:20:37  On model.data_pipeline.pilot_dimension: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "node_id": "model.data_pipeline.pilot_dimension"} */
+drop view if exists "dw"."dbt_dimensions"."pilot_dimension__dbt_backup" cascade
+2022-07-12 00:20:37.859706 (Thread-2): 00:20:37  finished collecting timing info
+2022-07-12 00:20:37.859922 (Thread-2): 00:20:37  Began executing node model.data_pipeline.stg_attempts
+2022-07-12 00:20:37.862294 (Thread-2): 00:20:37  Writing runtime SQL for node "model.data_pipeline.stg_attempts"
+2022-07-12 00:20:37.893354 (Thread-2): 00:20:37  Using redshift connection "model.data_pipeline.stg_attempts"
+2022-07-12 00:20:37.893543 (Thread-2): 00:20:37  On model.data_pipeline.stg_attempts: BEGIN
+2022-07-12 00:20:37.893638 (Thread-2): 00:20:37  Opening a new connection, currently in state closed
+2022-07-12 00:20:37.893723 (Thread-2): 00:20:37  Redshift adapter: Connecting to Redshift using 'database' credentials
+2022-07-12 00:20:37.897642 (Thread-3): 00:20:37  SQL status: DROP VIEW in 0.06 seconds
+2022-07-12 00:20:37.898562 (Thread-3): 00:20:37  On model.data_pipeline.pilot_dimension: COMMIT
+2022-07-12 00:20:37.898679 (Thread-3): 00:20:37  Using redshift connection "model.data_pipeline.pilot_dimension"
+2022-07-12 00:20:37.898758 (Thread-3): 00:20:37  On model.data_pipeline.pilot_dimension: COMMIT
+2022-07-12 00:20:38.009504 (Thread-3): 00:20:38  SQL status: COMMIT in 0.11 seconds
+2022-07-12 00:20:38.009690 (Thread-3): 00:20:38  Using redshift connection "model.data_pipeline.pilot_dimension"
+2022-07-12 00:20:38.009771 (Thread-3): 00:20:38  On model.data_pipeline.pilot_dimension: BEGIN
+2022-07-12 00:20:38.075128 (Thread-3): 00:20:38  SQL status: BEGIN in 0.07 seconds
+2022-07-12 00:20:38.075775 (Thread-3): 00:20:38  finished collecting timing info
+2022-07-12 00:20:38.075940 (Thread-3): 00:20:38  On model.data_pipeline.pilot_dimension: ROLLBACK
+2022-07-12 00:20:38.076256 (Thread-1): 00:20:38  Using redshift connection "model.data_pipeline.deliveries"
+2022-07-12 00:20:38.076382 (Thread-1): 00:20:38  On model.data_pipeline.deliveries: BEGIN
+2022-07-12 00:20:38.140616 (Thread-3): 00:20:38  On model.data_pipeline.pilot_dimension: Close
+2022-07-12 00:20:38.141309 (Thread-3): 00:20:38  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7060f3c2-d2cf-47ec-a048-e0830d1524c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0981048610>]}
+2022-07-12 00:20:38.141700 (Thread-3): 00:20:38  3 of 6 OK created view model dbt_dimensions.pilot_dimension..................... [CREATE VIEW in 1.75s]
+2022-07-12 00:20:38.141820 (Thread-3): 00:20:38  Finished running node model.data_pipeline.pilot_dimension
+2022-07-12 00:20:38.141958 (Thread-3): 00:20:38  Began running node model.data_pipeline.stg_deliveres
+2022-07-12 00:20:38.142145 (Thread-3): 00:20:38  6 of 6 START view model dbt.stg_deliveres....................................... [RUN]
+2022-07-12 00:20:38.142385 (Thread-3): 00:20:38  Acquiring new redshift connection "model.data_pipeline.stg_deliveres"
+2022-07-12 00:20:38.142478 (Thread-3): 00:20:38  Began compiling node model.data_pipeline.stg_deliveres
+2022-07-12 00:20:38.142567 (Thread-3): 00:20:38  Compiling model.data_pipeline.stg_deliveres
+2022-07-12 00:20:38.144919 (Thread-3): 00:20:38  Writing injected SQL for node "model.data_pipeline.stg_deliveres"
+2022-07-12 00:20:38.152158 (Thread-1): 00:20:38  SQL status: BEGIN in 0.08 seconds
+2022-07-12 00:20:38.153819 (Thread-1): 00:20:38  Using redshift connection "model.data_pipeline.deliveries"
+2022-07-12 00:20:38.153925 (Thread-1): 00:20:38  On model.data_pipeline.deliveries: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "node_id": "model.data_pipeline.deliveries"} */
+drop view if exists "dw"."dbt_facts"."deliveries__dbt_backup" cascade
+2022-07-12 00:20:38.160295 (Thread-3): 00:20:38  finished collecting timing info
+2022-07-12 00:20:38.160468 (Thread-3): 00:20:38  Began executing node model.data_pipeline.stg_deliveres
+2022-07-12 00:20:38.163700 (Thread-3): 00:20:38  Writing runtime SQL for node "model.data_pipeline.stg_deliveres"
+2022-07-12 00:20:38.177309 (Thread-3): 00:20:38  Using redshift connection "model.data_pipeline.stg_deliveres"
+2022-07-12 00:20:38.177492 (Thread-3): 00:20:38  On model.data_pipeline.stg_deliveres: BEGIN
+2022-07-12 00:20:38.177589 (Thread-3): 00:20:38  Opening a new connection, currently in state closed
+2022-07-12 00:20:38.177678 (Thread-3): 00:20:38  Redshift adapter: Connecting to Redshift using 'database' credentials
+2022-07-12 00:20:38.229470 (Thread-1): 00:20:38  SQL status: DROP VIEW in 0.08 seconds
+2022-07-12 00:20:38.230378 (Thread-1): 00:20:38  On model.data_pipeline.deliveries: COMMIT
+2022-07-12 00:20:38.230496 (Thread-1): 00:20:38  Using redshift connection "model.data_pipeline.deliveries"
+2022-07-12 00:20:38.230579 (Thread-1): 00:20:38  On model.data_pipeline.deliveries: COMMIT
+2022-07-12 00:20:38.443798 (Thread-1): 00:20:38  SQL status: COMMIT in 0.21 seconds
+2022-07-12 00:20:38.443999 (Thread-1): 00:20:38  Using redshift connection "model.data_pipeline.deliveries"
+2022-07-12 00:20:38.444083 (Thread-1): 00:20:38  On model.data_pipeline.deliveries: BEGIN
+2022-07-12 00:20:38.519807 (Thread-1): 00:20:38  SQL status: BEGIN in 0.08 seconds
+2022-07-12 00:20:38.520421 (Thread-1): 00:20:38  finished collecting timing info
+2022-07-12 00:20:38.520587 (Thread-1): 00:20:38  On model.data_pipeline.deliveries: ROLLBACK
+2022-07-12 00:20:38.531456 (Thread-2): 00:20:38  SQL status: BEGIN in 0.64 seconds
+2022-07-12 00:20:38.531628 (Thread-2): 00:20:38  Using redshift connection "model.data_pipeline.stg_attempts"
+2022-07-12 00:20:38.531713 (Thread-2): 00:20:38  On model.data_pipeline.stg_attempts: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "node_id": "model.data_pipeline.stg_attempts"} */
+
+
+  create view "dw"."dbt_stg"."stg_attempts__dbt_tmp" as (
+    
+
+
+with 
+source as (
+    select * from "dw"."operations_rds_public"."task"
+
+)
+select * from source
+  ) ;
+
+2022-07-12 00:20:38.595933 (Thread-1): 00:20:38  On model.data_pipeline.deliveries: Close
+2022-07-12 00:20:38.596581 (Thread-1): 00:20:38  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7060f3c2-d2cf-47ec-a048-e0830d1524c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0980659a90>]}
+2022-07-12 00:20:38.597089 (Thread-1): 00:20:38  1 of 6 OK created view model dbt_facts.deliveries............................... [CREATE VIEW in 2.21s]
+2022-07-12 00:20:38.597216 (Thread-1): 00:20:38  Finished running node model.data_pipeline.deliveries
+2022-07-12 00:20:38.611001 (Thread-2): 00:20:38  SQL status: CREATE VIEW in 0.08 seconds
+2022-07-12 00:20:38.613440 (Thread-2): 00:20:38  Using redshift connection "model.data_pipeline.stg_attempts"
+2022-07-12 00:20:38.613560 (Thread-2): 00:20:38  On model.data_pipeline.stg_attempts: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "node_id": "model.data_pipeline.stg_attempts"} */
+alter table "dw"."dbt_stg"."stg_attempts__dbt_tmp" rename to "stg_attempts"
+2022-07-12 00:20:38.684050 (Thread-2): 00:20:38  SQL status: ALTER TABLE in 0.07 seconds
+2022-07-12 00:20:38.685370 (Thread-2): 00:20:38  On model.data_pipeline.stg_attempts: COMMIT
+2022-07-12 00:20:38.685490 (Thread-2): 00:20:38  Using redshift connection "model.data_pipeline.stg_attempts"
+2022-07-12 00:20:38.685568 (Thread-2): 00:20:38  On model.data_pipeline.stg_attempts: COMMIT
+2022-07-12 00:20:38.804260 (Thread-3): 00:20:38  SQL status: BEGIN in 0.63 seconds
+2022-07-12 00:20:38.804441 (Thread-3): 00:20:38  Using redshift connection "model.data_pipeline.stg_deliveres"
+2022-07-12 00:20:38.804526 (Thread-3): 00:20:38  On model.data_pipeline.stg_deliveres: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "node_id": "model.data_pipeline.stg_deliveres"} */
+
+
+  create view "dw"."dbt"."stg_deliveres__dbt_tmp" as (
+    with 
+source as (
+     select * from "dw"."operations_rds_public"."task"
+
+
+)
+select * from source
+  ) ;
+
+2022-07-12 00:20:38.810478 (Thread-2): 00:20:38  SQL status: COMMIT in 0.12 seconds
+2022-07-12 00:20:38.810815 (Thread-2): 00:20:38  Using redshift connection "model.data_pipeline.stg_attempts"
+2022-07-12 00:20:38.810906 (Thread-2): 00:20:38  On model.data_pipeline.stg_attempts: BEGIN
+2022-07-12 00:20:38.869701 (Thread-33): handling poll request
+2022-07-12 00:20:38.870100 (Thread-33): 00:20:38  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bd8116400>]}
+2022-07-12 00:20:38.871451 (Thread-33): sending response (<Response 34690 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:38.878800 (Thread-3): 00:20:38  SQL status: CREATE VIEW in 0.07 seconds
+2022-07-12 00:20:38.881191 (Thread-3): 00:20:38  Using redshift connection "model.data_pipeline.stg_deliveres"
+2022-07-12 00:20:38.881317 (Thread-3): 00:20:38  On model.data_pipeline.stg_deliveres: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "node_id": "model.data_pipeline.stg_deliveres"} */
+alter table "dw"."dbt"."stg_deliveres__dbt_tmp" rename to "stg_deliveres"
+2022-07-12 00:20:38.881634 (Thread-2): 00:20:38  SQL status: BEGIN in 0.07 seconds
+2022-07-12 00:20:38.883024 (Thread-2): 00:20:38  Using redshift connection "model.data_pipeline.stg_attempts"
+2022-07-12 00:20:38.883132 (Thread-2): 00:20:38  On model.data_pipeline.stg_attempts: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "node_id": "model.data_pipeline.stg_attempts"} */
+drop view if exists "dw"."dbt_stg"."stg_attempts__dbt_backup" cascade
+2022-07-12 00:20:38.951748 (Thread-3): 00:20:38  SQL status: ALTER TABLE in 0.07 seconds
+2022-07-12 00:20:38.953073 (Thread-3): 00:20:38  On model.data_pipeline.stg_deliveres: COMMIT
+2022-07-12 00:20:38.953200 (Thread-3): 00:20:38  Using redshift connection "model.data_pipeline.stg_deliveres"
+2022-07-12 00:20:38.953278 (Thread-3): 00:20:38  On model.data_pipeline.stg_deliveres: COMMIT
+2022-07-12 00:20:38.956403 (Thread-2): 00:20:38  SQL status: DROP VIEW in 0.07 seconds
+2022-07-12 00:20:38.957248 (Thread-2): 00:20:38  On model.data_pipeline.stg_attempts: COMMIT
+2022-07-12 00:20:38.957352 (Thread-2): 00:20:38  Using redshift connection "model.data_pipeline.stg_attempts"
+2022-07-12 00:20:38.957430 (Thread-2): 00:20:38  On model.data_pipeline.stg_attempts: COMMIT
+2022-07-12 00:20:39.142231 (Thread-2): 00:20:39  SQL status: COMMIT in 0.18 seconds
+2022-07-12 00:20:39.142434 (Thread-2): 00:20:39  Using redshift connection "model.data_pipeline.stg_attempts"
+2022-07-12 00:20:39.142519 (Thread-2): 00:20:39  On model.data_pipeline.stg_attempts: BEGIN
+2022-07-12 00:20:39.145954 (Thread-3): 00:20:39  SQL status: COMMIT in 0.19 seconds
+2022-07-12 00:20:39.212273 (Thread-2): 00:20:39  SQL status: BEGIN in 0.07 seconds
+2022-07-12 00:20:39.212875 (Thread-2): 00:20:39  finished collecting timing info
+2022-07-12 00:20:39.213068 (Thread-2): 00:20:39  On model.data_pipeline.stg_attempts: ROLLBACK
+2022-07-12 00:20:39.213396 (Thread-3): 00:20:39  Using redshift connection "model.data_pipeline.stg_deliveres"
+2022-07-12 00:20:39.213522 (Thread-3): 00:20:39  On model.data_pipeline.stg_deliveres: BEGIN
+2022-07-12 00:20:39.282155 (Thread-2): 00:20:39  On model.data_pipeline.stg_attempts: Close
+2022-07-12 00:20:39.282854 (Thread-2): 00:20:39  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7060f3c2-d2cf-47ec-a048-e0830d1524c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f09806140d0>]}
+2022-07-12 00:20:39.283256 (Thread-2): 00:20:39  5 of 6 OK created view model dbt_stg.stg_attempts............................... [CREATE VIEW in 1.45s]
+2022-07-12 00:20:39.283377 (Thread-2): 00:20:39  Finished running node model.data_pipeline.stg_attempts
+2022-07-12 00:20:39.287667 (Thread-3): 00:20:39  SQL status: BEGIN in 0.07 seconds
+2022-07-12 00:20:39.289235 (Thread-3): 00:20:39  Using redshift connection "model.data_pipeline.stg_deliveres"
+2022-07-12 00:20:39.289348 (Thread-3): 00:20:39  On model.data_pipeline.stg_deliveres: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "node_id": "model.data_pipeline.stg_deliveres"} */
+drop view if exists "dw"."dbt"."stg_deliveres__dbt_backup" cascade
+2022-07-12 00:20:39.359122 (Thread-3): 00:20:39  SQL status: DROP VIEW in 0.07 seconds
+2022-07-12 00:20:39.360276 (Thread-3): 00:20:39  On model.data_pipeline.stg_deliveres: COMMIT
+2022-07-12 00:20:39.360401 (Thread-3): 00:20:39  Using redshift connection "model.data_pipeline.stg_deliveres"
+2022-07-12 00:20:39.360483 (Thread-3): 00:20:39  On model.data_pipeline.stg_deliveres: COMMIT
+2022-07-12 00:20:39.539433 (Thread-3): 00:20:39  SQL status: COMMIT in 0.18 seconds
+2022-07-12 00:20:39.539647 (Thread-3): 00:20:39  Using redshift connection "model.data_pipeline.stg_deliveres"
+2022-07-12 00:20:39.539731 (Thread-3): 00:20:39  On model.data_pipeline.stg_deliveres: BEGIN
+2022-07-12 00:20:39.609470 (Thread-3): 00:20:39  SQL status: BEGIN in 0.07 seconds
+2022-07-12 00:20:39.610043 (Thread-3): 00:20:39  finished collecting timing info
+2022-07-12 00:20:39.610199 (Thread-3): 00:20:39  On model.data_pipeline.stg_deliveres: ROLLBACK
+2022-07-12 00:20:39.679599 (Thread-3): 00:20:39  On model.data_pipeline.stg_deliveres: Close
+2022-07-12 00:20:39.680226 (Thread-3): 00:20:39  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7060f3c2-d2cf-47ec-a048-e0830d1524c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f09805c4280>]}
+2022-07-12 00:20:39.680605 (Thread-3): 00:20:39  6 of 6 OK created view model dbt.stg_deliveres.................................. [CREATE VIEW in 1.54s]
+2022-07-12 00:20:39.680722 (Thread-3): 00:20:39  Finished running node model.data_pipeline.stg_deliveres
+2022-07-12 00:20:40.110598 (Thread-34): handling poll request
+2022-07-12 00:20:40.111036 (Thread-34): 00:20:40  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bd8116e50>]}
+2022-07-12 00:20:40.111925 (Thread-34): sending response (<Response 16675 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:41.354483 (Thread-35): handling poll request
+2022-07-12 00:20:41.354887 (Thread-35): 00:20:41  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bd8126550>]}
+2022-07-12 00:20:41.355370 (Thread-35): sending response (<Response 287 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:42.581341 (Thread-36): handling poll request
+2022-07-12 00:20:42.581759 (Thread-36): 00:20:42  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bd8126610>]}
+2022-07-12 00:20:42.582258 (Thread-36): sending response (<Response 288 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:43.367753 (Thread-4): 00:20:43  SQL status: SELECT in 6.23 seconds
+2022-07-12 00:20:43.370075 (Thread-4): 00:20:43  Using redshift connection "model.data_pipeline.robot_dimension"
+2022-07-12 00:20:43.370211 (Thread-4): 00:20:43  On model.data_pipeline.robot_dimension: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "node_id": "model.data_pipeline.robot_dimension"} */
+alter table "dw"."dbt_dimensions"."robot_dimension__dbt_tmp" rename to "robot_dimension"
+2022-07-12 00:20:43.433183 (Thread-4): 00:20:43  SQL status: ALTER TABLE in 0.06 seconds
+2022-07-12 00:20:43.438738 (Thread-4): 00:20:43  On model.data_pipeline.robot_dimension: COMMIT
+2022-07-12 00:20:43.438860 (Thread-4): 00:20:43  Using redshift connection "model.data_pipeline.robot_dimension"
+2022-07-12 00:20:43.438938 (Thread-4): 00:20:43  On model.data_pipeline.robot_dimension: COMMIT
+2022-07-12 00:20:43.572997 (Thread-4): 00:20:43  SQL status: COMMIT in 0.13 seconds
+2022-07-12 00:20:43.573379 (Thread-4): 00:20:43  Using redshift connection "model.data_pipeline.robot_dimension"
+2022-07-12 00:20:43.573480 (Thread-4): 00:20:43  On model.data_pipeline.robot_dimension: BEGIN
+2022-07-12 00:20:43.635957 (Thread-4): 00:20:43  SQL status: BEGIN in 0.06 seconds
+2022-07-12 00:20:43.637564 (Thread-4): 00:20:43  Using redshift connection "model.data_pipeline.robot_dimension"
+2022-07-12 00:20:43.637732 (Thread-4): 00:20:43  On model.data_pipeline.robot_dimension: /* {"app": "dbt", "dbt_version": "1.0.8", "profile_name": "user", "target_name": "default", "node_id": "model.data_pipeline.robot_dimension"} */
+drop table if exists "dw"."dbt_dimensions"."robot_dimension__dbt_backup" cascade
+2022-07-12 00:20:43.700110 (Thread-4): 00:20:43  SQL status: DROP TABLE in 0.06 seconds
+2022-07-12 00:20:43.701032 (Thread-4): 00:20:43  On model.data_pipeline.robot_dimension: COMMIT
+2022-07-12 00:20:43.701151 (Thread-4): 00:20:43  Using redshift connection "model.data_pipeline.robot_dimension"
+2022-07-12 00:20:43.701230 (Thread-4): 00:20:43  On model.data_pipeline.robot_dimension: COMMIT
+2022-07-12 00:20:43.772008 (Thread-4): 00:20:43  SQL status: COMMIT in 0.07 seconds
+2022-07-12 00:20:43.772163 (Thread-4): 00:20:43  Using redshift connection "model.data_pipeline.robot_dimension"
+2022-07-12 00:20:43.772239 (Thread-4): 00:20:43  On model.data_pipeline.robot_dimension: BEGIN
+2022-07-12 00:20:43.808511 (Thread-37): handling poll request
+2022-07-12 00:20:43.808940 (Thread-37): 00:20:43  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bd8126fa0>]}
+2022-07-12 00:20:43.832866 (Thread-37): sending response (<Response 7616 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:43.834495 (Thread-4): 00:20:43  SQL status: BEGIN in 0.06 seconds
+2022-07-12 00:20:43.835105 (Thread-4): 00:20:43  finished collecting timing info
+2022-07-12 00:20:43.835267 (Thread-4): 00:20:43  On model.data_pipeline.robot_dimension: ROLLBACK
+2022-07-12 00:20:43.897163 (Thread-4): 00:20:43  On model.data_pipeline.robot_dimension: Close
+2022-07-12 00:20:43.897823 (Thread-4): 00:20:43  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7060f3c2-d2cf-47ec-a048-e0830d1524c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0980f4beb0>]}
+2022-07-12 00:20:43.898212 (Thread-4): 00:20:43  4 of 6 OK created table model dbt_dimensions.robot_dimension.................... [SELECT in 7.50s]
+2022-07-12 00:20:43.898332 (Thread-4): 00:20:43  Finished running node model.data_pipeline.robot_dimension
+2022-07-12 00:20:43.899857 (MainThread): 00:20:43  Acquiring new redshift connection "master"
+2022-07-12 00:20:43.900021 (MainThread): 00:20:43  Using redshift connection "master"
+2022-07-12 00:20:43.900103 (MainThread): 00:20:43  On master: BEGIN
+2022-07-12 00:20:43.900185 (MainThread): 00:20:43  Opening a new connection, currently in state closed
+2022-07-12 00:20:43.900263 (MainThread): 00:20:43  Redshift adapter: Connecting to Redshift using 'database' credentials
+2022-07-12 00:20:44.528388 (MainThread): 00:20:44  SQL status: BEGIN in 0.63 seconds
+2022-07-12 00:20:44.528581 (MainThread): 00:20:44  On master: COMMIT
+2022-07-12 00:20:44.528662 (MainThread): 00:20:44  Using redshift connection "master"
+2022-07-12 00:20:44.528742 (MainThread): 00:20:44  On master: COMMIT
+2022-07-12 00:20:44.598634 (MainThread): 00:20:44  SQL status: COMMIT in 0.07 seconds
+2022-07-12 00:20:44.598833 (MainThread): 00:20:44  On master: Close
+2022-07-12 00:20:44.599465 (MainThread): 00:20:44  
+2022-07-12 00:20:44.599615 (MainThread): 00:20:44  Finished running 5 view models, 1 table model in 12.08s.
+2022-07-12 00:20:44.599709 (MainThread): 00:20:44  Connection 'master' was properly closed.
+2022-07-12 00:20:44.599777 (MainThread): 00:20:44  Connection 'model.data_pipeline.robot_dimension' was properly closed.
+2022-07-12 00:20:44.599841 (MainThread): 00:20:44  Connection 'model.data_pipeline.stg_attempts' was properly closed.
+2022-07-12 00:20:44.599902 (MainThread): 00:20:44  Connection 'model.data_pipeline.stg_deliveres' was properly closed.
+2022-07-12 00:20:44.599963 (MainThread): 00:20:44  Connection 'model.data_pipeline.deliveries' was properly closed.
+2022-07-12 00:20:44.662513 (MainThread): 00:20:44  
+2022-07-12 00:20:44.662732 (MainThread): 00:20:44  Completed successfully
+2022-07-12 00:20:44.662841 (MainThread): 00:20:44  
+2022-07-12 00:20:44.662930 (MainThread): 00:20:44  Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+2022-07-12 00:20:45.075524 (Thread-38): handling poll request
+2022-07-12 00:20:45.075978 (Thread-38): 00:20:45  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bd80bd130>]}
+2022-07-12 00:20:45.078836 (Thread-38): sending response (<Response 24716 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:45.645017 (Thread-39): handling status request
+2022-07-12 00:20:45.645418 (Thread-39): 00:20:45  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bd810df70>]}
+2022-07-12 00:20:45.646495 (Thread-39): sending response (<Response 23476 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:20:45.691357 (Thread-40): handling status request
+2022-07-12 00:20:45.691784 (Thread-40): 00:20:45  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '01ad65df-6ed6-4e55-9d3b-1e1ec6fe44a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7bd8146100>]}
+2022-07-12 00:20:45.692804 (Thread-40): sending response (<Response 23476 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:57:41.279483 (MainThread): Running with dbt=1.1.1
+2022-07-12 00:57:41.353457 (MainThread): 00:57:41  [WARNING]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+2022-07-12 00:57:41.353898 (MainThread): 00:57:41  Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '0ed45e3e-eecf-47c8-b250-1cf9f0bd06fd', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48333975e0>]}
+2022-07-12 00:57:41.354272 (MainThread): 00:57:41  [WARNING]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+2022-07-12 00:57:41.354508 (MainThread): 00:57:41  Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '0ed45e3e-eecf-47c8-b250-1cf9f0bd06fd', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4833397d00>]}
+2022-07-12 00:57:41.377198 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt_rpc.task.server.RPCServerTask'>, debug=None, defer=None, exclude=None, fail_fast=None, host='0.0.0.0', log_cache_events=False, log_format=None, models=None, partial_parse=True, port=8580, printer_width=None, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, send_anonymous_usage_stats=None, single_threaded=False, state=None, static_parser=None, target=None, threads=None, use_colors=None, use_experimental_parser=None, vars='{}', version_check=None, warn_error=None, which='rpc', write_json=None)
+2022-07-12 00:57:41.383514 (MainThread): Tracking: tracking
+2022-07-12 00:57:41.406214 (MainThread): 00:57:41  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f482f06c6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4824491d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4824491dc0>]}
+2022-07-12 00:57:41.406525 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=22
+2022-07-12 00:57:41.406836 (MainThread): Supported methods: ['build', 'cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'list', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'source-freshness', 'status', 'test']
+2022-07-12 00:57:41.407076 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2022-07-12 00:57:41.414949 (Thread-12): 00:57:41  Unable to do partial parsing because of a dbt version mismatch. Saved manifest version: 1.0.8. Current version: 1.1.1.
+2022-07-12 00:57:41.415232 (Thread-12): 00:57:41  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0ed45e3e-eecf-47c8-b250-1cf9f0bd06fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4824491820>]}
+2022-07-12 00:57:41.484812 (Thread-12): 00:57:41  Parsing macros/relations.sql
+2022-07-12 00:57:41.485680 (Thread-12): 00:57:41  Parsing macros/adapters.sql
+2022-07-12 00:57:41.515175 (Thread-12): 00:57:41  Parsing macros/catalog.sql
+2022-07-12 00:57:41.527459 (Thread-12): 00:57:41  Parsing macros/materializations/snapshot_merge.sql
+2022-07-12 00:57:41.528132 (Thread-12): 00:57:41  Parsing macros/relations.sql
+2022-07-12 00:57:41.529410 (Thread-12): 00:57:41  Parsing macros/adapters.sql
+2022-07-12 00:57:41.550253 (Thread-12): 00:57:41  Parsing macros/catalog.sql
+2022-07-12 00:57:41.552347 (Thread-12): 00:57:41  Parsing macros/materializations/snapshot_merge.sql
+2022-07-12 00:57:41.553936 (Thread-12): 00:57:41  Parsing macros/adapters/metadata.sql
+2022-07-12 00:57:41.560665 (Thread-12): 00:57:41  Parsing macros/adapters/columns.sql
+2022-07-12 00:57:41.569880 (Thread-12): 00:57:41  Parsing macros/adapters/freshness.sql
+2022-07-12 00:57:41.572709 (Thread-12): 00:57:41  Parsing macros/adapters/persist_docs.sql
+2022-07-12 00:57:41.576911 (Thread-12): 00:57:41  Parsing macros/adapters/relation.sql
+2022-07-12 00:57:41.586083 (Thread-12): 00:57:41  Parsing macros/adapters/schema.sql
+2022-07-12 00:57:41.588178 (Thread-12): 00:57:41  Parsing macros/adapters/indexes.sql
+2022-07-12 00:57:41.590758 (Thread-12): 00:57:41  Parsing macros/get_custom_name/get_custom_schema.sql
+2022-07-12 00:57:41.593107 (Thread-12): 00:57:41  Parsing macros/get_custom_name/get_custom_alias.sql
+2022-07-12 00:57:41.594555 (Thread-12): 00:57:41  Parsing macros/get_custom_name/get_custom_database.sql
+2022-07-12 00:57:41.596072 (Thread-12): 00:57:41  Parsing macros/etc/datetime.sql
+2022-07-12 00:57:41.603973 (Thread-12): 00:57:41  Parsing macros/etc/statement.sql
+2022-07-12 00:57:41.608230 (Thread-12): 00:57:41  Parsing macros/generic_test_sql/unique.sql
+2022-07-12 00:57:41.608925 (Thread-12): 00:57:41  Parsing macros/generic_test_sql/not_null.sql
+2022-07-12 00:57:41.609726 (Thread-12): 00:57:41  Parsing macros/generic_test_sql/accepted_values.sql
+2022-07-12 00:57:41.611079 (Thread-12): 00:57:41  Parsing macros/generic_test_sql/relationships.sql
+2022-07-12 00:57:41.611935 (Thread-12): 00:57:41  Parsing macros/materializations/configs.sql
+2022-07-12 00:57:41.614447 (Thread-12): 00:57:41  Parsing macros/materializations/hooks.sql
+2022-07-12 00:57:41.618211 (Thread-12): 00:57:41  Parsing macros/materializations/models/table/table.sql
+2022-07-12 00:57:41.625318 (Thread-12): 00:57:41  Parsing macros/materializations/models/table/create_table_as.sql
+2022-07-12 00:57:41.628106 (Thread-12): 00:57:41  Parsing macros/materializations/models/view/create_or_replace_view.sql
+2022-07-12 00:57:41.630660 (Thread-12): 00:57:41  Parsing macros/materializations/models/view/helpers.sql
+2022-07-12 00:57:41.631906 (Thread-12): 00:57:41  Parsing macros/materializations/models/view/create_view_as.sql
+2022-07-12 00:57:41.634103 (Thread-12): 00:57:41  Parsing macros/materializations/models/view/view.sql
+2022-07-12 00:57:41.640861 (Thread-12): 00:57:41  Parsing macros/materializations/models/incremental/incremental.sql
+2022-07-12 00:57:41.650272 (Thread-12): 00:57:41  Parsing macros/materializations/models/incremental/on_schema_change.sql
+2022-07-12 00:57:41.664579 (Thread-12): 00:57:41  Parsing macros/materializations/models/incremental/is_incremental.sql
+2022-07-12 00:57:41.666036 (Thread-12): 00:57:41  Parsing macros/materializations/models/incremental/merge.sql
+2022-07-12 00:57:41.681345 (Thread-12): 00:57:41  Parsing macros/materializations/models/incremental/column_helpers.sql
+2022-07-12 00:57:41.685512 (Thread-12): 00:57:41  Parsing macros/materializations/seeds/helpers.sql
+2022-07-12 00:57:41.700972 (Thread-12): 00:57:41  Parsing macros/materializations/seeds/seed.sql
+2022-07-12 00:57:41.706668 (Thread-12): 00:57:41  Parsing macros/materializations/tests/helpers.sql
+2022-07-12 00:57:41.708371 (Thread-12): 00:57:41  Parsing macros/materializations/tests/test.sql
+2022-07-12 00:57:41.712552 (Thread-12): 00:57:41  Parsing macros/materializations/tests/where_subquery.sql
+2022-07-12 00:57:41.714309 (Thread-12): 00:57:41  Parsing macros/materializations/snapshots/helpers.sql
+2022-07-12 00:57:41.726632 (Thread-12): 00:57:41  Parsing macros/materializations/snapshots/strategies.sql
+2022-07-12 00:57:41.742773 (Thread-12): 00:57:41  Parsing macros/materializations/snapshots/snapshot_merge.sql
+2022-07-12 00:57:41.744381 (Thread-12): 00:57:41  Parsing macros/materializations/snapshots/snapshot.sql
+2022-07-12 00:57:41.754548 (Thread-12): 00:57:41  Parsing tests/generic/builtin.sql
+2022-07-12 00:57:41.944092 (Thread-12): 00:57:41  1699: static parser successfully parsed facts/deliveries.sql
+2022-07-12 00:57:41.956090 (Thread-12): 00:57:41  1699: static parser successfully parsed dimensions/robot_dimension.sql
+2022-07-12 00:57:41.958495 (Thread-12): 00:57:41  1699: static parser successfully parsed dimensions/merchant_dimension.sql
+2022-07-12 00:57:41.960652 (Thread-12): 00:57:41  1699: static parser successfully parsed dimensions/pilot_dimension.sql
+2022-07-12 00:57:41.962721 (Thread-12): 00:57:41  1699: static parser successfully parsed staging/stg_deliveries/stg_deliveres.sql
+2022-07-12 00:57:41.964943 (Thread-12): 00:57:41  1699: static parser successfully parsed staging/stg_deliveries/stg_attempts.sql
+2022-07-12 00:57:41.988635 (Thread-12): 00:57:41  [WARNING]: Did not find matching node for patch with name 'customers' in the 'models' section of file 'models/schema.yml'
+2022-07-12 00:57:41.994427 (Thread-12): 00:57:41  [WARNING]: Did not find matching node for patch with name 'orders' in the 'models' section of file 'models/schema.yml'
+2022-07-12 00:57:42.056504 (Thread-12): 00:57:42  [WARNING]: Test 'test.data_pipeline.unique_customers_customer_id.c5af1ff4b1' (models/schema.yml) depends on a node named 'customers' which was not found
+2022-07-12 00:57:42.056856 (Thread-12): 00:57:42  [WARNING]: Test 'test.data_pipeline.not_null_customers_customer_id.5c9bf9911d' (models/schema.yml) depends on a node named 'customers' which was not found
+2022-07-12 00:57:42.057106 (Thread-12): 00:57:42  [WARNING]: Test 'test.data_pipeline.unique_orders_order_id.fed79b3a6e' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:57:42.057314 (Thread-12): 00:57:42  [WARNING]: Test 'test.data_pipeline.not_null_orders_order_id.cf6c17daed' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:57:42.057501 (Thread-12): 00:57:42  [WARNING]: Test 'test.data_pipeline.not_null_orders_customer_id.c5f02694af' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:57:42.057680 (Thread-12): 00:57:42  [WARNING]: Test 'test.data_pipeline.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2' (models/schema.yml) depends on a node named 'customers' which was not found
+2022-07-12 00:57:42.057946 (Thread-12): 00:57:42  [WARNING]: Test 'test.data_pipeline.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:57:42.058143 (Thread-12): 00:57:42  [WARNING]: Test 'test.data_pipeline.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:57:42.058327 (Thread-12): 00:57:42  [WARNING]: Test 'test.data_pipeline.not_null_orders_amount.106140f9fd' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:57:42.058504 (Thread-12): 00:57:42  [WARNING]: Test 'test.data_pipeline.not_null_orders_credit_card_amount.d3ca593b59' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:57:42.058682 (Thread-12): 00:57:42  [WARNING]: Test 'test.data_pipeline.not_null_orders_coupon_amount.ab90c90625' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:57:42.058859 (Thread-12): 00:57:42  [WARNING]: Test 'test.data_pipeline.not_null_orders_bank_transfer_amount.7743500c49' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:57:42.059032 (Thread-12): 00:57:42  [WARNING]: Test 'test.data_pipeline.not_null_orders_gift_card_amount.413a0d2d7a' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-12 00:57:42.112298 (Thread-12): 00:57:42  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.stg_deliveries
+- models.data-pipeline.staging
+- models.data-pipeline
+- snapshots
+
+2022-07-12 00:57:42.117131 (Thread-12): 00:57:42  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0ed45e3e-eecf-47c8-b250-1cf9f0bd06fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4824152ac0>]}
+2022-07-12 00:57:44.770734 (Thread-13): handling ps request
+2022-07-12 00:57:44.771148 (Thread-13): 00:57:44  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '0ed45e3e-eecf-47c8-b250-1cf9f0bd06fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48243df850>]}
+2022-07-12 00:57:44.771663 (Thread-13): sending response (<Response 106 bytes [200 OK]>) to 10.0.21.58
+2022-07-12 00:57:44.810780 (Thread-14): handling status request
+2022-07-12 00:57:44.811131 (Thread-14): 00:57:44  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '0ed45e3e-eecf-47c8-b250-1cf9f0bd06fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48243df4c0>]}
+2022-07-12 00:57:44.812114 (Thread-14): sending response (<Response 23581 bytes [200 OK]>) to 10.0.21.58
+2022-07-12 00:57:44.933113 (Thread-15): handling status request
+2022-07-12 00:57:44.933505 (Thread-15): 00:57:44  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '0ed45e3e-eecf-47c8-b250-1cf9f0bd06fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48241b2280>]}
+2022-07-12 00:57:44.934510 (Thread-15): sending response (<Response 23581 bytes [200 OK]>) to 10.0.21.58
+2022-07-12 00:57:45.007363 (Thread-16): handling status request
+2022-07-12 00:57:45.007701 (Thread-16): 00:57:45  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '0ed45e3e-eecf-47c8-b250-1cf9f0bd06fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48241b2d30>]}
+2022-07-12 00:57:45.008648 (Thread-16): sending response (<Response 23581 bytes [200 OK]>) to 10.0.21.58
+2022-07-12 00:57:47.474146 (Thread-17): handling status request
+2022-07-12 00:57:47.475758 (Thread-17): 00:57:47  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '0ed45e3e-eecf-47c8-b250-1cf9f0bd06fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48243e4370>]}
+2022-07-12 00:57:47.476754 (Thread-17): sending response (<Response 23581 bytes [200 OK]>) to 10.0.21.58
+2022-07-12 00:58:08.310170 (Thread-18): handling status request
+2022-07-12 00:58:08.311747 (Thread-18): 00:58:08  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '0ed45e3e-eecf-47c8-b250-1cf9f0bd06fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48243f4520>]}
+2022-07-12 00:58:08.312736 (Thread-18): sending response (<Response 23558 bytes [200 OK]>) to 10.0.21.58
+2022-07-12 00:58:08.344726 (Thread-19): handling list request
+2022-07-12 00:58:08.344999 (Thread-19): 00:58:08  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '0ed45e3e-eecf-47c8-b250-1cf9f0bd06fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48243f4880>]}
+2022-07-12 00:58:08.397808 (Thread-19): 00:58:08  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0ed45e3e-eecf-47c8-b250-1cf9f0bd06fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f482418aac0>]}
+2022-07-12 00:58:08.398357 (Thread-19): 00:58:08  Found 6 models, 0 tests, 0 snapshots, 0 analyses, 193 macros, 0 operations, 0 seed files, 6 sources, 0 exposures, 0 metrics
+2022-07-12 00:58:08.398682 (Thread-19): 00:58:08  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0ed45e3e-eecf-47c8-b250-1cf9f0bd06fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4838954490>]}
+2022-07-12 00:58:08.402426 (Thread-19): sending response (<Response 2564 bytes [200 OK]>) to 10.0.21.58
+2022-07-12 00:58:13.669635 (Thread-20): 00:58:13  Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+2022-07-12 00:58:13.670165 (Thread-20): 00:58:13  Partial parsing: updated file: data_pipeline://models/facts/deliveries.sql
+2022-07-12 00:58:13.674380 (Thread-20): 00:58:13  1699: static parser successfully parsed facts/deliveries.sql
+2022-07-12 00:58:13.732523 (Thread-20): 00:58:13  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.stg_deliveries
+- models.data-pipeline.staging
+- models.data-pipeline
+- snapshots
+
+2022-07-12 00:58:13.737894 (Thread-20): 00:58:13  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0ed45e3e-eecf-47c8-b250-1cf9f0bd06fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48040ddfa0>]}
+2022-07-12 00:58:14.190825 (Thread-21): handling status request
+2022-07-12 00:58:14.191224 (Thread-21): 00:58:14  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '0ed45e3e-eecf-47c8-b250-1cf9f0bd06fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48240aabb0>]}
+2022-07-12 00:58:14.191772 (Thread-21): sending response (<Response 2036 bytes [200 OK]>) to 10.0.21.58
+2022-07-12 00:58:14.229964 (Thread-22): handling list request
+2022-07-12 00:58:14.230368 (Thread-22): 00:58:14  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '0ed45e3e-eecf-47c8-b250-1cf9f0bd06fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48240aaa30>]}
+2022-07-12 00:58:14.268332 (Thread-22): 00:58:14  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0ed45e3e-eecf-47c8-b250-1cf9f0bd06fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48240aa130>]}
+2022-07-12 00:58:14.268936 (Thread-22): 00:58:14  Found 6 models, 0 tests, 0 snapshots, 0 analyses, 193 macros, 0 operations, 0 seed files, 6 sources, 0 exposures, 0 metrics
+2022-07-12 00:58:14.269242 (Thread-22): 00:58:14  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0ed45e3e-eecf-47c8-b250-1cf9f0bd06fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4838954880>]}
+2022-07-12 00:58:14.271619 (Thread-22): sending response (<Response 2564 bytes [200 OK]>) to 10.0.21.58
+2022-07-12 00:58:14.323703 (Thread-23): handling status request
+2022-07-12 00:58:14.324108 (Thread-23): 00:58:14  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '0ed45e3e-eecf-47c8-b250-1cf9f0bd06fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48040b8a00>]}
+2022-07-12 00:58:14.324610 (Thread-23): sending response (<Response 2059 bytes [200 OK]>) to 10.0.21.58
+2022-07-12 00:58:14.350071 (Thread-24): handling status request
+2022-07-12 00:58:14.350383 (Thread-24): 00:58:14  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '0ed45e3e-eecf-47c8-b250-1cf9f0bd06fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f482407c640>]}
+2022-07-12 00:58:14.350832 (Thread-24): sending response (<Response 2059 bytes [200 OK]>) to 10.0.21.58
+2022-07-12 00:58:18.462642 (Thread-25): handling status request
+2022-07-12 00:58:18.463041 (Thread-25): 00:58:18  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '0ed45e3e-eecf-47c8-b250-1cf9f0bd06fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48240aa250>]}
+2022-07-12 00:58:18.463526 (Thread-25): sending response (<Response 2059 bytes [200 OK]>) to 10.0.21.58
