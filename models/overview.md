@@ -1,5 +1,5 @@
 {% docs __overview__ %}
 
-## Data Documentation for CoCo Data Pipeline
+## Data Documentation for Coco Data Pipeline
 
 {% enddocs %}
