@@ -182,3 +182,38 @@ There are 4 unused configuration paths:
 2022-07-12 00:41:00.619640 (Thread-36): handling status request
 2022-07-12 00:41:00.620059 (Thread-36): 00:41:00  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '700800ef-efdb-49d0-a72c-99224063a4c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e1050cee0>]}
 2022-07-12 00:41:00.620565 (Thread-36): sending response (<Response 2059 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:41:03.819489 (Thread-37): 00:41:03  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2022-07-12 00:41:03.819735 (Thread-37): 00:41:03  Partial parsing enabled, no changes found, skipping parsing
+2022-07-12 00:41:03.820265 (Thread-37): 00:41:03  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.data-pipeline.staging
+- models.stg_deliveries
+- models.data-pipeline
+- snapshots
+
+2022-07-12 00:41:03.826239 (Thread-37): 00:41:03  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '700800ef-efdb-49d0-a72c-99224063a4c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e10450f70>]}
+2022-07-12 00:41:04.246069 (Thread-38): handling status request
+2022-07-12 00:41:04.246656 (Thread-38): 00:41:04  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '700800ef-efdb-49d0-a72c-99224063a4c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e10489400>]}
+2022-07-12 00:41:04.247344 (Thread-38): sending response (<Response 1743 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:41:04.324708 (Thread-39): handling status request
+2022-07-12 00:41:04.325211 (Thread-39): 00:41:04  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '700800ef-efdb-49d0-a72c-99224063a4c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e10489250>]}
+2022-07-12 00:41:04.325700 (Thread-39): sending response (<Response 1743 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:41:10.671762 (Thread-40): 00:41:10  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2022-07-12 00:41:10.672025 (Thread-40): 00:41:10  Partial parsing enabled, no changes found, skipping parsing
+2022-07-12 00:41:10.672579 (Thread-40): 00:41:10  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 4 unused configuration paths:
+- models.data-pipeline.staging
+- models.stg_deliveries
+- models.data-pipeline
+- snapshots
+
+2022-07-12 00:41:10.678455 (Thread-40): 00:41:10  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '700800ef-efdb-49d0-a72c-99224063a4c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e10371c40>]}
+2022-07-12 00:41:11.300803 (Thread-41): handling status request
+2022-07-12 00:41:11.301644 (Thread-42): handling status request
+2022-07-12 00:41:11.302105 (Thread-41): 00:41:11  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '700800ef-efdb-49d0-a72c-99224063a4c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e104d2a30>]}
+2022-07-12 00:41:11.302450 (Thread-42): 00:41:11  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '700800ef-efdb-49d0-a72c-99224063a4c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e10529730>]}
+2022-07-12 00:41:11.302978 (Thread-41): sending response (<Response 1743 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:41:11.303454 (Thread-42): sending response (<Response 1743 bytes [200 OK]>) to 10.0.38.61
+2022-07-12 00:41:16.998077 (Thread-43): handling status request
+2022-07-12 00:41:16.998520 (Thread-43): 00:41:16  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '700800ef-efdb-49d0-a72c-99224063a4c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5e104d2a00>]}
+2022-07-12 00:41:16.999019 (Thread-43): sending response (<Response 1743 bytes [200 OK]>) to 10.0.38.61
