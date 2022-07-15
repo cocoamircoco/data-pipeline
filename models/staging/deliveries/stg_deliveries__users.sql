@@ -2,12 +2,12 @@ with
 source as (
 
     {#-
-    
     #}
-    select * from {{ source('deliveries_rds_public', 'attempts') }}
+     select * from {{ source('deliveries_rds_public', 'users') }}
     {% if target.name == 'dev' %}
         limit 100
     {% endif %}
+
 
 
 )

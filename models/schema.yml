@@ -1,14 +1,32 @@
 version: 2
 
 sources:
-#   - name: deliveries_rds_public
-#     tables: 
-#       - name: attempts
-
-  - name: deliveriesdev_public
-    tables: 
+  - name: deliveries_rds_public
+    tables:
+      - name: attempt_history
       - name: attempts
+      - name: carts
+      - name: cities
       - name: deliveries
+      - name: delivery_issues
+      - name: delivery_sms_failures
+      - name: doordash_references
+      - name: doordash_requests
+      - name: doordash_responses
+      - name: images
+      - name: items
+      - name: locations
+      - name: olo_config_providers
+      - name: olo_providers
+      - name: olo_references
+      - name: olo_requests
+      - name: olo_responses
+      - name: partner_configs
+      - name: partner_olo_configs
+      - name: partners
+      - name: sms_templates
+      - name: users
+      - name: users_partners
 
   - name: operations_rds_public
     tables:
@@ -16,13 +34,8 @@ sources:
       - name: robot
       - name: operator
       - name: task
-
-
-  # - name: dbt_schema_core
-
-  #   tables:
-  #     - name: device_events
-
+      - name: triphistory
+      - name: trip
 
 models:
 

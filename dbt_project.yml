@@ -16,14 +16,22 @@ clean-targets:
     - "dbt_modules"
     - "logs"
 
+
 models:
-  stg_deliveries:
-      +schema: stg_deliveries
-  data-pipeline:
-      materialized: table
-      staging:
-        materialized: view
+  
+  
+  data_pipeline: 
+      staging: 
+        +schema: stg
+        +materialized: table
+      # staging2: 
+      #   +schema: stg2
+      data-pipeline:
+        materialized: table
+        staging:
+          materialized: view
+        
 
 
-snapshots:
-  target_schema: snapshots
+  snapshots:
+    target_schema: snapshots
