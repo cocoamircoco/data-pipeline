@@ -3600,3 +3600,33 @@ There are 3 unused configuration paths:
 2022-07-18 05:24:48.576946 (Thread-30): handling status request
 2022-07-18 05:24:48.577349 (Thread-30): 05:24:48  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '2a83f3de-5de0-41e9-825a-29d1e5e747fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff26c8e8cd0>]}
 2022-07-18 05:24:48.577854 (Thread-30): sending response (<Response 1778 bytes [200 OK]>) to 10.0.26.48
+2022-07-18 05:24:50.525731 (Thread-31): 05:24:50  Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+2022-07-18 05:24:50.525945 (Thread-31): 05:24:50  Partial parsing enabled, no changes found, skipping parsing
+2022-07-18 05:24:50.526978 (Thread-31): 05:24:50  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.data_pipeline.data-pipeline.staging
+- models.data_pipeline.data-pipeline
+- models.snapshots
+
+2022-07-18 05:24:50.532508 (Thread-31): 05:24:50  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2a83f3de-5de0-41e9-825a-29d1e5e747fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff26c702fd0>]}
+2022-07-18 05:24:51.128944 (Thread-32): handling status request
+2022-07-18 05:24:51.129361 (Thread-32): 05:24:51  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '2a83f3de-5de0-41e9-825a-29d1e5e747fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff26c7c5430>]}
+2022-07-18 05:24:51.129879 (Thread-32): sending response (<Response 1753 bytes [200 OK]>) to 10.0.26.48
+2022-07-18 05:24:51.144728 (Thread-33): handling status request
+2022-07-18 05:24:51.145004 (Thread-33): 05:24:51  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '2a83f3de-5de0-41e9-825a-29d1e5e747fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff26c7c5250>]}
+2022-07-18 05:24:51.145395 (Thread-33): sending response (<Response 1753 bytes [200 OK]>) to 10.0.26.48
+2022-07-18 05:24:54.829555 (Thread-34): handling status request
+2022-07-18 05:24:54.829964 (Thread-34): 05:24:54  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '2a83f3de-5de0-41e9-825a-29d1e5e747fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff26c7c5580>]}
+2022-07-18 05:24:54.830441 (Thread-34): sending response (<Response 1753 bytes [200 OK]>) to 10.0.26.48
+2022-07-18 05:24:54.840697 (Thread-35): handling status request
+2022-07-18 05:24:54.840955 (Thread-35): 05:24:54  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '2a83f3de-5de0-41e9-825a-29d1e5e747fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff26c7c50d0>]}
+2022-07-18 05:24:54.841318 (Thread-35): sending response (<Response 1753 bytes [200 OK]>) to 10.0.26.48
+2022-07-18 05:25:59.213163 (Thread-36): handling status request
+2022-07-18 05:25:59.213553 (Thread-36): 05:25:59  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '2a83f3de-5de0-41e9-825a-29d1e5e747fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff26c7c53d0>]}
+2022-07-18 05:25:59.214019 (Thread-36): sending response (<Response 1753 bytes [200 OK]>) to 10.0.26.48
+2022-07-18 05:25:59.217614 (Thread-37): handling status request
+2022-07-18 05:25:59.217879 (Thread-37): 05:25:59  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '2a83f3de-5de0-41e9-825a-29d1e5e747fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2ad4ee2e0>]}
+2022-07-18 05:25:59.242997 (Thread-37): sending response (<Response 1753 bytes [200 OK]>) to 10.0.26.48
+2022-07-18 05:26:06.545914 (Thread-38): handling status request
+2022-07-18 05:26:06.546322 (Thread-38): 05:26:06  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '2a83f3de-5de0-41e9-825a-29d1e5e747fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2ad4ee610>]}
+2022-07-18 05:26:06.546851 (Thread-38): sending response (<Response 1753 bytes [200 OK]>) to 10.0.26.48
