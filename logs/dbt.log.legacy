@@ -4478,3 +4478,158 @@ There are 3 unused configuration paths:
 2022-07-18 06:14:22.820437 (Thread-53): handling status request
 2022-07-18 06:14:22.822111 (Thread-53): 06:14:22  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'e4d56b1b-be78-4a18-acb5-8467434fc610', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fed4183a640>]}
 2022-07-18 06:14:22.822600 (Thread-53): sending response (<Response 1753 bytes [200 OK]>) to 10.0.12.143
+2022-07-18 06:35:35.293672 (MainThread): Running with dbt=1.0.8
+2022-07-18 06:35:35.366052 (MainThread): 06:35:35  [WARNING]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+2022-07-18 06:35:35.366502 (MainThread): 06:35:35  Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'd834d04e-35b6-4c0d-8f6a-85a645652834', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb83bf10a90>]}
+2022-07-18 06:35:35.366900 (MainThread): 06:35:35  [WARNING]: Deprecated functionality
+The `data-paths` config has been renamed to `seed-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+2022-07-18 06:35:35.367113 (MainThread): 06:35:35  Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'd834d04e-35b6-4c0d-8f6a-85a645652834', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb83bf10910>]}
+2022-07-18 06:35:35.388092 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt_rpc.task.server.RPCServerTask'>, debug=None, defer=None, exclude=None, fail_fast=None, host='0.0.0.0', log_cache_events=False, log_format=None, models=None, partial_parse=True, port=8580, printer_width=None, profile='user', profiles_dir='/usr/src/develop/.dbt', project_dir=None, record_timing_info=None, rpc_method=None, send_anonymous_usage_stats=None, single_threaded=False, state=None, static_parser=None, target=None, threads=None, use_colors=None, use_experimental_parser=None, vars='{}', version_check=None, warn_error=None, which='rpc', write_json=None)
+2022-07-18 06:35:35.394964 (MainThread): Tracking: tracking
+2022-07-18 06:35:35.423211 (Thread-12): 06:35:35  Unable to do partial parsing because profile has changed
+2022-07-18 06:35:35.423602 (MainThread): 06:35:35  Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb837c3f9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb83beec0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb82c2d7910>]}
+2022-07-18 06:35:35.423954 (Thread-12): 06:35:35  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd834d04e-35b6-4c0d-8f6a-85a645652834', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb83423f220>]}
+2022-07-18 06:35:35.424215 (MainThread): Serving RPC server at 0.0.0.0:8580, pid=22
+2022-07-18 06:35:35.425334 (MainThread): Supported methods: ['build', 'cli_args', 'compile', 'compile_sql', 'deps', 'docs.generate', 'gc', 'get-manifest', 'kill', 'list', 'poll', 'ps', 'run', 'run-operation', 'run_sql', 'seed', 'snapshot', 'snapshot-freshness', 'source-freshness', 'status', 'test']
+2022-07-18 06:35:35.425513 (MainThread): Send requests to http://localhost:8580/jsonrpc
+2022-07-18 06:35:35.507597 (Thread-12): 06:35:35  Parsing macros/relations.sql
+2022-07-18 06:35:35.508522 (Thread-12): 06:35:35  Parsing macros/adapters.sql
+2022-07-18 06:35:35.536648 (Thread-12): 06:35:35  Parsing macros/catalog.sql
+2022-07-18 06:35:35.548540 (Thread-12): 06:35:35  Parsing macros/materializations/snapshot_merge.sql
+2022-07-18 06:35:35.549200 (Thread-12): 06:35:35  Parsing macros/relations.sql
+2022-07-18 06:35:35.550491 (Thread-12): 06:35:35  Parsing macros/adapters.sql
+2022-07-18 06:35:35.571378 (Thread-12): 06:35:35  Parsing macros/catalog.sql
+2022-07-18 06:35:35.573459 (Thread-12): 06:35:35  Parsing macros/materializations/snapshot_merge.sql
+2022-07-18 06:35:35.575087 (Thread-12): 06:35:35  Parsing macros/adapters/metadata.sql
+2022-07-18 06:35:35.581820 (Thread-12): 06:35:35  Parsing macros/adapters/columns.sql
+2022-07-18 06:35:35.591131 (Thread-12): 06:35:35  Parsing macros/adapters/freshness.sql
+2022-07-18 06:35:35.593879 (Thread-12): 06:35:35  Parsing macros/adapters/persist_docs.sql
+2022-07-18 06:35:35.598058 (Thread-12): 06:35:35  Parsing macros/adapters/relation.sql
+2022-07-18 06:35:35.607039 (Thread-12): 06:35:35  Parsing macros/adapters/schema.sql
+2022-07-18 06:35:35.609101 (Thread-12): 06:35:35  Parsing macros/adapters/indexes.sql
+2022-07-18 06:35:35.611706 (Thread-12): 06:35:35  Parsing macros/get_custom_name/get_custom_schema.sql
+2022-07-18 06:35:35.614062 (Thread-12): 06:35:35  Parsing macros/get_custom_name/get_custom_alias.sql
+2022-07-18 06:35:35.615505 (Thread-12): 06:35:35  Parsing macros/get_custom_name/get_custom_database.sql
+2022-07-18 06:35:35.616997 (Thread-12): 06:35:35  Parsing macros/etc/datetime.sql
+2022-07-18 06:35:35.625030 (Thread-12): 06:35:35  Parsing macros/etc/statement.sql
+2022-07-18 06:35:35.629260 (Thread-12): 06:35:35  Parsing macros/generic_test_sql/unique.sql
+2022-07-18 06:35:35.629989 (Thread-12): 06:35:35  Parsing macros/generic_test_sql/not_null.sql
+2022-07-18 06:35:35.630567 (Thread-12): 06:35:35  Parsing macros/generic_test_sql/accepted_values.sql
+2022-07-18 06:35:35.631882 (Thread-12): 06:35:35  Parsing macros/generic_test_sql/relationships.sql
+2022-07-18 06:35:35.632731 (Thread-12): 06:35:35  Parsing macros/materializations/configs.sql
+2022-07-18 06:35:35.635037 (Thread-12): 06:35:35  Parsing macros/materializations/hooks.sql
+2022-07-18 06:35:35.638763 (Thread-12): 06:35:35  Parsing macros/materializations/models/table/table.sql
+2022-07-18 06:35:35.645832 (Thread-12): 06:35:35  Parsing macros/materializations/models/table/create_table_as.sql
+2022-07-18 06:35:35.648582 (Thread-12): 06:35:35  Parsing macros/materializations/models/view/create_or_replace_view.sql
+2022-07-18 06:35:35.651145 (Thread-12): 06:35:35  Parsing macros/materializations/models/view/helpers.sql
+2022-07-18 06:35:35.652412 (Thread-12): 06:35:35  Parsing macros/materializations/models/view/create_view_as.sql
+2022-07-18 06:35:35.654645 (Thread-12): 06:35:35  Parsing macros/materializations/models/view/view.sql
+2022-07-18 06:35:35.661377 (Thread-12): 06:35:35  Parsing macros/materializations/models/incremental/incremental.sql
+2022-07-18 06:35:35.670883 (Thread-12): 06:35:35  Parsing macros/materializations/models/incremental/on_schema_change.sql
+2022-07-18 06:35:35.685556 (Thread-12): 06:35:35  Parsing macros/materializations/models/incremental/is_incremental.sql
+2022-07-18 06:35:35.687081 (Thread-12): 06:35:35  Parsing macros/materializations/models/incremental/merge.sql
+2022-07-18 06:35:35.697645 (Thread-12): 06:35:35  Parsing macros/materializations/models/incremental/column_helpers.sql
+2022-07-18 06:35:35.701855 (Thread-12): 06:35:35  Parsing macros/materializations/seeds/helpers.sql
+2022-07-18 06:35:35.717246 (Thread-12): 06:35:35  Parsing macros/materializations/seeds/seed.sql
+2022-07-18 06:35:35.722993 (Thread-12): 06:35:35  Parsing macros/materializations/tests/helpers.sql
+2022-07-18 06:35:35.724700 (Thread-12): 06:35:35  Parsing macros/materializations/tests/test.sql
+2022-07-18 06:35:35.728915 (Thread-12): 06:35:35  Parsing macros/materializations/tests/where_subquery.sql
+2022-07-18 06:35:35.730688 (Thread-12): 06:35:35  Parsing macros/materializations/snapshots/helpers.sql
+2022-07-18 06:35:35.741420 (Thread-12): 06:35:35  Parsing macros/materializations/snapshots/strategies.sql
+2022-07-18 06:35:35.757207 (Thread-12): 06:35:35  Parsing macros/materializations/snapshots/snapshot_merge.sql
+2022-07-18 06:35:35.758877 (Thread-12): 06:35:35  Parsing macros/materializations/snapshots/snapshot.sql
+2022-07-18 06:35:35.769823 (Thread-12): 06:35:35  Parsing tests/generic/builtin.sql
+2022-07-18 06:35:35.956845 (Thread-12): 06:35:35  1603: static parser failed on staging/operations/stg_opereations__trip.sql
+2022-07-18 06:35:35.970095 (Thread-12): 06:35:35  1602: parser fallback to jinja rendering on staging/operations/stg_opereations__trip.sql
+2022-07-18 06:35:35.972214 (Thread-12): 06:35:35  1699: static parser successfully parsed staging/operations/stg_opearations__triphistory.sql
+2022-07-18 06:35:35.974695 (Thread-12): 06:35:35  1603: static parser failed on staging/deliveries/stg_deliveries__olo_references.sql
+2022-07-18 06:35:35.978260 (Thread-12): 06:35:35  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__olo_references.sql
+2022-07-18 06:35:35.979319 (Thread-12): 06:35:35  1603: static parser failed on staging/deliveries/stg_deliveries__olo_responses.sql
+2022-07-18 06:35:35.982829 (Thread-12): 06:35:35  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__olo_responses.sql
+2022-07-18 06:35:35.983861 (Thread-12): 06:35:35  1603: static parser failed on staging/deliveries/stg_deliveries__doordash_requests.sql
+2022-07-18 06:35:35.987346 (Thread-12): 06:35:35  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__doordash_requests.sql
+2022-07-18 06:35:35.988366 (Thread-12): 06:35:35  1603: static parser failed on staging/deliveries/stg_deliveries__delivery_issues.sql
+2022-07-18 06:35:35.991869 (Thread-12): 06:35:35  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__delivery_issues.sql
+2022-07-18 06:35:35.992892 (Thread-12): 06:35:35  1603: static parser failed on staging/deliveries/stg_deliveries__partners.sql
+2022-07-18 06:35:35.996523 (Thread-12): 06:35:35  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__partners.sql
+2022-07-18 06:35:35.997546 (Thread-12): 06:35:35  1603: static parser failed on staging/deliveries/stg_deliveries__olo_providers.sql
+2022-07-18 06:35:36.001089 (Thread-12): 06:35:36  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__olo_providers.sql
+2022-07-18 06:35:36.002141 (Thread-12): 06:35:36  1603: static parser failed on staging/deliveries/stg_deliveries__partner_olo_configs.sql
+2022-07-18 06:35:36.005636 (Thread-12): 06:35:36  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__partner_olo_configs.sql
+2022-07-18 06:35:36.006708 (Thread-12): 06:35:36  1603: static parser failed on staging/deliveries/stg_deliveries__carts.sql
+2022-07-18 06:35:36.010207 (Thread-12): 06:35:36  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__carts.sql
+2022-07-18 06:35:36.011258 (Thread-12): 06:35:36  1603: static parser failed on staging/deliveries/stg_deliveries__doordash_responses.sql
+2022-07-18 06:35:36.014812 (Thread-12): 06:35:36  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__doordash_responses.sql
+2022-07-18 06:35:36.015850 (Thread-12): 06:35:36  1603: static parser failed on staging/deliveries/stg_deliveries__olo_requests.sql
+2022-07-18 06:35:36.020320 (Thread-12): 06:35:36  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__olo_requests.sql
+2022-07-18 06:35:36.021357 (Thread-12): 06:35:36  1603: static parser failed on staging/deliveries/stg_deliveries__doordash_references.sql
+2022-07-18 06:35:36.024836 (Thread-12): 06:35:36  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__doordash_references.sql
+2022-07-18 06:35:36.025865 (Thread-12): 06:35:36  1603: static parser failed on staging/deliveries/stg_deliveries__cities.sql
+2022-07-18 06:35:36.029335 (Thread-12): 06:35:36  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__cities.sql
+2022-07-18 06:35:36.030404 (Thread-12): 06:35:36  1603: static parser failed on staging/deliveries/stg_deliveries__sms_templates.sql
+2022-07-18 06:35:36.033838 (Thread-12): 06:35:36  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__sms_templates.sql
+2022-07-18 06:35:36.034909 (Thread-12): 06:35:36  1603: static parser failed on staging/deliveries/stg_deliveries__deliveries.sql
+2022-07-18 06:35:36.038403 (Thread-12): 06:35:36  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__deliveries.sql
+2022-07-18 06:35:36.039439 (Thread-12): 06:35:36  1603: static parser failed on staging/deliveries/stg_deliveries__locations.sql
+2022-07-18 06:35:36.043005 (Thread-12): 06:35:36  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__locations.sql
+2022-07-18 06:35:36.044049 (Thread-12): 06:35:36  1603: static parser failed on staging/deliveries/stg_deliveries__olo_config_providers.sql
+2022-07-18 06:35:36.047571 (Thread-12): 06:35:36  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__olo_config_providers.sql
+2022-07-18 06:35:36.048614 (Thread-12): 06:35:36  1603: static parser failed on staging/deliveries/stg_deliveries__partner_configs.sql
+2022-07-18 06:35:36.052135 (Thread-12): 06:35:36  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__partner_configs.sql
+2022-07-18 06:35:36.053176 (Thread-12): 06:35:36  1603: static parser failed on staging/deliveries/stg_deliveries__users_partners.sql
+2022-07-18 06:35:36.056782 (Thread-12): 06:35:36  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__users_partners.sql
+2022-07-18 06:35:36.057819 (Thread-12): 06:35:36  1603: static parser failed on staging/deliveries/stg_deliveries__delivery_sms_failures.sql
+2022-07-18 06:35:36.061350 (Thread-12): 06:35:36  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__delivery_sms_failures.sql
+2022-07-18 06:35:36.062413 (Thread-12): 06:35:36  1603: static parser failed on staging/deliveries/stg_deliveries__attempt_history.sql
+2022-07-18 06:35:36.065962 (Thread-12): 06:35:36  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__attempt_history.sql
+2022-07-18 06:35:36.067008 (Thread-12): 06:35:36  1603: static parser failed on staging/deliveries/stg_deliveries__images.sql
+2022-07-18 06:35:36.070530 (Thread-12): 06:35:36  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__images.sql
+2022-07-18 06:35:36.071570 (Thread-12): 06:35:36  1603: static parser failed on staging/deliveries/stg_deliveries__items.sql
+2022-07-18 06:35:36.076208 (Thread-12): 06:35:36  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__items.sql
+2022-07-18 06:35:36.077250 (Thread-12): 06:35:36  1603: static parser failed on staging/deliveries/stg_deliveries__users.sql
+2022-07-18 06:35:36.080828 (Thread-12): 06:35:36  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__users.sql
+2022-07-18 06:35:36.081879 (Thread-12): 06:35:36  1603: static parser failed on staging/deliveries/stg_deliveries__attempts.sql
+2022-07-18 06:35:36.085455 (Thread-12): 06:35:36  1602: parser fallback to jinja rendering on staging/deliveries/stg_deliveries__attempts.sql
+2022-07-18 06:35:36.108133 (Thread-12): 06:35:36  [WARNING]: Did not find matching node for patch with name 'customers' in the 'models' section of file 'models/schema.yml'
+2022-07-18 06:35:36.114137 (Thread-12): 06:35:36  [WARNING]: Did not find matching node for patch with name 'orders' in the 'models' section of file 'models/schema.yml'
+2022-07-18 06:35:36.191755 (Thread-12): 06:35:36  [WARNING]: Test 'test.data_pipeline.unique_customers_customer_id.c5af1ff4b1' (models/schema.yml) depends on a node named 'customers' which was not found
+2022-07-18 06:35:36.192118 (Thread-12): 06:35:36  [WARNING]: Test 'test.data_pipeline.not_null_customers_customer_id.5c9bf9911d' (models/schema.yml) depends on a node named 'customers' which was not found
+2022-07-18 06:35:36.192329 (Thread-12): 06:35:36  [WARNING]: Test 'test.data_pipeline.unique_orders_order_id.fed79b3a6e' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-18 06:35:36.192517 (Thread-12): 06:35:36  [WARNING]: Test 'test.data_pipeline.not_null_orders_order_id.cf6c17daed' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-18 06:35:36.192703 (Thread-12): 06:35:36  [WARNING]: Test 'test.data_pipeline.not_null_orders_customer_id.c5f02694af' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-18 06:35:36.192887 (Thread-12): 06:35:36  [WARNING]: Test 'test.data_pipeline.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2' (models/schema.yml) depends on a node named 'customers' which was not found
+2022-07-18 06:35:36.193069 (Thread-12): 06:35:36  [WARNING]: Test 'test.data_pipeline.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-18 06:35:36.193247 (Thread-12): 06:35:36  [WARNING]: Test 'test.data_pipeline.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-18 06:35:36.193429 (Thread-12): 06:35:36  [WARNING]: Test 'test.data_pipeline.not_null_orders_amount.106140f9fd' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-18 06:35:36.193608 (Thread-12): 06:35:36  [WARNING]: Test 'test.data_pipeline.not_null_orders_credit_card_amount.d3ca593b59' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-18 06:35:36.193785 (Thread-12): 06:35:36  [WARNING]: Test 'test.data_pipeline.not_null_orders_coupon_amount.ab90c90625' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-18 06:35:36.193984 (Thread-12): 06:35:36  [WARNING]: Test 'test.data_pipeline.not_null_orders_bank_transfer_amount.7743500c49' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-18 06:35:36.194170 (Thread-12): 06:35:36  [WARNING]: Test 'test.data_pipeline.not_null_orders_gift_card_amount.413a0d2d7a' (models/schema.yml) depends on a node named 'orders' which was not found
+2022-07-18 06:35:36.244875 (Thread-12): 06:35:36  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.data_pipeline.data-pipeline
+- models.snapshots
+- models.data_pipeline.data-pipeline.staging
+
+2022-07-18 06:35:36.251127 (Thread-12): 06:35:36  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd834d04e-35b6-4c0d-8f6a-85a645652834', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8081b3c40>]}
+2022-07-18 06:35:37.905367 (Thread-13): handling status request
+2022-07-18 06:35:37.905849 (Thread-13): 06:35:37  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd834d04e-35b6-4c0d-8f6a-85a645652834', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb82c095460>]}
+2022-07-18 06:35:37.907355 (Thread-13): sending response (<Response 38401 bytes [200 OK]>) to 10.0.12.141
+2022-07-18 06:35:37.931934 (Thread-14): handling ps request
+2022-07-18 06:35:37.932374 (Thread-14): 06:35:37  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd834d04e-35b6-4c0d-8f6a-85a645652834', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8340d71c0>]}
+2022-07-18 06:35:37.932839 (Thread-14): sending response (<Response 106 bytes [200 OK]>) to 10.0.12.141
+2022-07-18 06:35:38.111253 (Thread-15): handling status request
+2022-07-18 06:35:38.111689 (Thread-15): 06:35:38  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd834d04e-35b6-4c0d-8f6a-85a645652834', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb82c08d6a0>]}
+2022-07-18 06:35:38.113092 (Thread-15): sending response (<Response 38401 bytes [200 OK]>) to 10.0.12.141
+2022-07-18 06:35:38.143167 (Thread-16): handling status request
+2022-07-18 06:35:38.143554 (Thread-16): 06:35:38  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd834d04e-35b6-4c0d-8f6a-85a645652834', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb82c08d8e0>]}
+2022-07-18 06:35:38.144910 (Thread-16): sending response (<Response 38401 bytes [200 OK]>) to 10.0.12.141
+2022-07-18 06:35:39.477571 (Thread-17): handling status request
+2022-07-18 06:35:39.478004 (Thread-17): 06:35:39  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd834d04e-35b6-4c0d-8f6a-85a645652834', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb82c0aae50>]}
+2022-07-18 06:35:39.479367 (Thread-17): sending response (<Response 38401 bytes [200 OK]>) to 10.0.12.141
+2022-07-18 06:36:08.927247 (Thread-18): handling status request
+2022-07-18 06:36:08.928547 (Thread-18): 06:36:08  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': 'd834d04e-35b6-4c0d-8f6a-85a645652834', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb82c0aa3a0>]}
+2022-07-18 06:36:08.929883 (Thread-18): sending response (<Response 38401 bytes [200 OK]>) to 10.0.12.141
